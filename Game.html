@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <style>
+        /* Add your CSS styles for the quiz here */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+#quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-top: 0;
+    color: #333;
+}
+
+#question {
+    font-size: 18px;
+    margin: 20px 0;
+    color: #333;
+}
+
+ul#choices {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul#choices li {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+ul#choices li:hover {
+    background-color: #ddd;
+}
+
+button#next-button {
+    background-color: #fbfcfc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button#next-button:hover {
+    background-color: #ffffff;
+}
+
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <h1>Quiz App</h1>
+        <p id="question">Question goes here...</p>
+        <ul id="choices">
+            <!-- Choices will be generated dynamically using JavaScript -->
+        </ul>
+        <button id="next-button"></button>
+    </div>
+
+    <script>
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+
+        const quizData = [
+            {
+                question: "What makes eclipse seasons happen approximately every six months?",
+                choices: ["Solar eclipses happen during the day, lunar eclipses at night", "Solar eclipses involve the Sun, lunar eclipses involve the Moon","Solar eclipses are more common","Lunar eclipses are longer than solar eclipses"],
+                correctAnswer: "The Moon's orbit is a bit tilted"
+            },
+            {
+                question: "What is the difference between a solar and lunar eclipse?",
+                choices: ["Solar eclipses happen during the day, lunar eclipses at night", "Solar eclipses involve the Sun, lunar eclipses involve the Moon", "Solar eclipses are more common", "Lunar eclipses are longer than solar eclipses"],
+                correctAnswer: "Solar eclipses involve the Sun, lunar eclipses involve the Moon"
+            },
+            {
+                question: "When does an eclipse occur?",
+                choices: ["When the Moon is closest to the Earth", "When the Sun is closest to the Earth", "When the Sun, Moon, and Earth are aligned just right", "When there is a full moon"],
+                correctAnswer: "When the Sun, Moon, and Earth are aligned just right"
+            },
+            {
+                question: "What do scientists study to predict eclipses?",
+                choices: ["Animal behavior", "Ocean currents", "Movements of the Sun, Moon, and Earth","Volcanic eruptions"],
+                correctAnswer: " Movements of the Sun, Moon, and Earth"
+            },
+            {
+                question: "Why do eclipses only cover a small area on Earth?",
+                choices: ["Because the Moon is very tiny", "Because the Sun is too far away", "Because Earth is really big, and the alignment is precise", "Because the Moon is too bright"],
+                correctAnswer: "Because Earth is really big, and the alignment is precise"
+            },
+            {
+                question: "What causes the Moon to appear dark and mysterious during a lunar eclipse?",
+                choices: ["Clouds in the Earth's atmosphere", "The Moon is hidden behind the Earth", "The Moon is turning off its light", "The Moon's natural dark color"],
+                correctAnswer: "The Moon is hidden behind the Earth"
+            },
+            {
+                question: "Which celestial body moves between the Earth and the Sun during a solar eclipse?",
+                choices: ["The Earth", "The Moon", "The Sun", "A comet"],
+                correctAnswer: "The Moon"
+            },
+            {
+                question: "How many eclipse seasons occur in a year?",
+                choices: ["One", "Two", "Four", "Twelve"],
+                correctAnswer: "Two"
+            },
+            {
+                question: "What happens during a lunar eclipse?",
+                choices: ["  The Moon covers the Sun", "The Earth's shadow covers the Moon", "The Earth moves between the Sun and the Moon", "The Moon disappears completely"],
+                correctAnswer: "The Earth's shadow covers the Moon"
+            },
+            {
+                question: "During a solar eclipse, what does the Moon cover?",
+                choices: ["The Earth", "The Sun", "The stars", "The clouds,"],
+                correctAnswer: "The Sun"
+            },
+            {
+                question: "What do scientists use to predict when and where eclipses will occur?",
+                choices: ["Magic crystals", "Special tools and math", "Weather forecasts", "Astrology"],
+                correctAnswer: "Special tools and math"
+            },
+            {
+                question: "Why do only some people on Earth see an eclipse at a given time?",
+                choices: ["Because eclipses only happen at night", "Because Earth is too big", "Because the Sun, Moon, and Earth have to be in a special alignment", "Because the Moon is too small"],
+                correctAnswer: "Because the Sun, Moon, and Earth have to be in a special alignment"
+            },
+            {
+                question: "How often do eclipse seasons occur?",
+                choices: ["Every month", "Approximately every six months", "Once a year", "Only once in a lifetime"],
+                correctAnswer: "Approximately every six months"
+            },
+            {
+                question: "Why do eclipses occur?",
+                choices: ["Because the Earth stops spinning", "Because of the way the Sun, Moon, and Earth align", "Because of earthquakes", "Because of strong winds,"],
+                correctAnswer: "Because the Sun, Moon, and Earth have to be in a special alignment"
+            },
+            // Add more questions here...
+            {
+                question: "What are the two main types of eclipses mentioned in the article?",
+                choices: ["Solar and stellar", "Solar and lunar", "Stellar and lunar", "Solar and celestial"],
+                correctAnswer: "Solar and lunar"
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        const questionElement = document.getElementById("question");
+        const choicesElement = document.getElementById("choices");
+        const nextButton = document.getElementById("next-button");
+
+        // Shuffle the quizData array for randomization
+        shuffleArray(quizData);
+
+        function displayQuestion() {
+            const question = quizData[currentQuestion];
+            questionElement.textContent = question.question;
+
+            choicesElement.innerHTML = "";
+            for (const choice of question.choices) {
+                const choiceItem = document.createElement("li");
+                choiceItem.textContent = choice;
+                choiceItem.addEventListener("click", checkAnswer);
+                choicesElement.appendChild(choiceItem);
+            }
+        }
+
+        function checkAnswer(event) {
+            const selectedAnswer = event.target.textContent;
+            const correctAnswer = quizData[currentQuestion].correctAnswer;
+
+            if (selectedAnswer === correctAnswer) {
+                score++;
+            }
+
+            currentQuestion++;
+
+            if (currentQuestion < quizData.length) {
+                displayQuestion();
+            } else {
+                endQuiz();
+            }
+        }
+
+        function endQuiz() {
+            questionElement.textContent = `You scored ${score} out of ${quizData.length}!`;
+            choicesElement.innerHTML = "";
+            nextButton.style.display = "none";
+        }
+
+        nextButton.addEventListener("click", () => {
+            if (currentQuestion < quizData.length) {
+                displayQuestion();
+            }
+        });
+
+        displayQuestion();
+    </script>
+</body>
+</html>

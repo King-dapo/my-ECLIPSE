@@ -1,0 +1,88 @@
+
+body{
+    background-image: url('background_img.png');
+    background-repeat: no repeat;
+
+}
+
+.container{
+    width: 500px;
+    border-radius: 7px;
+    background: #ffff;
+    height: 500px;
+}
+
+.container h2{
+    color: rgb(126, 214, 126);
+    font-size: 40px;
+    font-family: cursive;
+    padding: 18px 25px;
+    border-bottom: 2px solid ;
+}
+
+.container .content{
+    margin: 25px 20px 35px;
+}
+.content .word{
+  font-family: cursive;
+  width: 300px;
+  font-size: 33px;
+  text-align: center;
+  text-transform: uppercase;
+   letter-spacing: 24px;
+   color: greenyellow;
+   margin-right: -24px;
+   background-color: black;
+   justify-content: center;
+
+} 
+.content .details{
+    margin: 25px 0 20px;
+}
+.details p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.details p b{
+    font-weight: 500;
+}
+.content input{
+    width: 90%;
+    height: 60px;
+    outline: none;
+    padding: 0 16px;
+    border-radius: 5px;
+    border: 1px solid ;
+    font-size: 18px;
+
+}
+
+.content .buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.buttons .button{
+    border: none;
+    outline: none;
+    
+    padding: 15px 0;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons .refresh-word{
+    background: yellowgreen;
+    color: rgb(40, 54, 17);
+    width: 150px;
+    height:50px ;
+}
+
+.buttons .check-word{
+    background: rgb(24, 247, 135);
+    color: rgb(105, 116, 88);
+    width: 150px;
+}
+

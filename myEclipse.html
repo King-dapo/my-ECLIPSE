@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Eclipse in Your Area</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #container {
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #search-form {
+            margin-top: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        #location-input {
+            padding: 5px;
+            width: 100%;
+        }
+
+        #search-button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Find the Next Eclipse in Your Area</h1>
+        <form id="search-form">
+            <label for="location-input">Enter Your Location:</label>
+            <input type="text" id="location-input" placeholder="City, State, or Coordinates">
+            <button type="button" id="search-button">Search</button>
+        </form>
+        <div id="result">
+            <!-- Eclipse information will be displayed here -->
+        </div>
+    </div>
+    <script>
+        const searchButton = document.getElementById('search-button');
+        const locationInput = document.getElementById('location-input');
+        const resultDiv = document.getElementById('result');
+
+        searchButton.addEventListener('click', () => {
+            const location = locationInput.value;
+            
+            // Fetch eclipse data from the NASA Eclipse Web API
+            function fecthdata(){
+            fetch("https://api.nasa.gov/DONKI/CMEAnalysis?location=${location}&api_key=XHEqX6j5vEMVada2xFdRZMf5sOCYcLLf8JIucodw")
+                .then(response => response.json())
+                .then(data => {
+                    if (data.length > 0) {
+                        const eclipseInfo = data[0];
+                        const eclipseTime = new Date(eclipseInfo.startTime).toLocaleString();
+                        const eclipseType = eclipseInfo.cmeAnalyses[0].cmeType;
+                        
+                        resultDiv.innerHTML = `
+                            <p>Next Eclipse in ${location}:</p>
+                            <p>Date and Time: ${eclipseTime}</p>
+                            <p>Eclipse Type: ${eclipseType}</p>
+                        `;
+                    } else {
+                        resultDiv.innerHTML = '<p>No eclipse data found for the provided location.</p>';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching eclipse data:', error);
+                    resultDiv.innerHTML = '<p>An error occurred while fetching eclipse data.</p>';
+                });
+            }
+        });
+        fecthdata();
+    </script>
+</body>
+</html>

@@ -1,0 +1,1961 @@
+<!DOCTYPE html>
+<!--
+scripts and programs that download content transparent to the user are not allowed without permission
+-->
+<html lang=en>
+    <head>
+        <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+        <title>Eclipses in Kano, Nigeria</title>
+        <meta name=description content="Which upcoming lunar and solar eclipses are visible in Kano and what do they look like?">
+        <meta name=robots content="max-image-preview:large">
+        <meta property="og:image" content="https://www.timeanddate.com/scripts/cityog.php?title=Eclipse%20Info%20for&amp;tint=0xfaca4e&amp;state=Kano&amp;country=Nigeria&amp;image=generic">
+        <meta property="og:image:width" content=1201>
+        <meta property="og:image:height" content=631>
+        <meta property="og:type" content=website>
+        <meta name=viewport content="width=device-width,initial-scale=1.0">
+        <style>
+            @font-face {
+                font-family: iconfont;
+                src: url("/common/fonts/iconfont.woff2?v8") format("woff2"),url("/common/fonts/iconfont.woff?v8") format("woff"),url("/common/fonts/iconfont.ttf?v8") format("truetype"),url("/common/fonts/iconfont.svg?v8#iconfont") format("svg");
+                font-weight: 400;
+                font-style: normal
+            }
+        </style>
+        <link rel=preload href="/common/fonts/iconfont.woff2?v8" as=font type="font/woff2" crossorigin>
+        <link rel=preconnect href="https://c.tadst.com" crossorigin>
+        <link rel=preload href="//c.tadst.com/com/common/global_25.css.br" as=style>
+        <link rel=preload href="/common/prebidtad.ios.mob_76.js.br" as=script>
+        <script src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" async></script>
+        <script src="https://c.amazon-adsystem.com/aax2/apstag.js" async></script>
+        <script src="https://secure.quantserve.com/quant.js" async></script>
+        <script>
+
+            AdMgr = (function() {
+                var isLog = 0
+                  , isSent = 0
+                  , slots = []
+                  , slotsR = []
+                  , techs = {
+                    "pb": 1,
+                    "aps": 1
+                }
+                  , isResent = 0
+                  , techsR = {
+                    "pb": 1,
+                    "aps": 1
+                }
+                  , vals = {};
+                function logAds() {
+                    if (isLog) {
+                        return
+                    }
+                    if (!window.jcb || !window.TADhba) {
+                        setTimeout(logAds, 1000);
+                        return
+                    }
+                    isLog = 1;
+                    jcb("/scripts/logads.php?d=m" + "&" + TADhba(), function() {})
+                }
+                AD = {
+                    s: [],
+                    o: 0
+                };
+                googletag = window.googletag || {};
+                googletag.cmd = googletag.cmd || [];
+                function push(f) {
+                    googletag.cmd.push(f)
+                }
+                function set(n, v) {
+                    vals[n] = v
+                }
+                function get(n) {
+                    return vals[n]
+                }
+                function setTargeting(n, v) {
+                    if (v) {
+                        push(function() {
+                            googletag.pubads().setTargeting(n, v)
+                        })
+                    }
+                }
+                function send() {
+                    if (isSent)
+                        return;
+                    isSent = true;
+                    setTargeting("pbv", window.pbv);
+                    push(function() {
+                        googletag.enableServices();
+                        googletag.pubads().refresh(AD.s);
+                        if (AD.i) {
+                            googletag.pubads().refresh([AD.i])
+                        }
+                    })
+                }
+                function resend() {
+                    if (isResent)
+                        return;
+                    isResent = true;
+                    let o = slotsR[0];
+                    o.S.setTargeting('rot', '' + o.r);
+                    googletag.pubads().refresh([o.S])
+                }
+                function rendered() {
+                    setTimeout(logAds, 1000)
+                }
+                function bidsIn(i) {
+                    delete techs[i];
+                    if (Object.keys(techs).length == 0) {
+                        sendAdserverRequest()
+                    }
+                }
+                function bidsInR(i) {
+                    delete techsR[i];
+                    if (Object.keys(techsR).length == 0) {
+                        resend()
+                    }
+                }
+                function addSlot(o) {
+                    if (o.wm && o.wm > window.innerWidth) {
+                        o.wf.i = o.i;
+                        o = o.wf
+                    }
+                    o.r = 0;
+                    o.a9 = function() {
+                        return {
+                            slotID: o.i,
+                            slotName: o.n,
+                            sizes: o.s
+                        }
+                    }
+                    slots.push(o);
+                    if (o.css) {
+                        let s = document.createElement('style');
+                        s.textContent = o.css;
+                        document.head.append(s)
+                    }
+                }
+                function refresh(o) {
+                    if (o.r < 3 && AdMgr.highBid) {
+                        o.r++;
+                        slotsR = [o];
+                        setTimeout(resend, 3000);
+                        pbjs.requestBids({
+                            timeout: 2000,
+                            adUnitCodes: [o.n],
+                            bidsBackHandler: function() {
+                                try {
+                                    pbjs.setTargetingForGPTAsync([o.n])
+                                } catch (e) {}
+                                AdMgr.bidsInR('pb')
+                            }
+                        });
+                        TADaps.t = +new Date();
+                        apstag.fetchBids({
+                            slots: [o.a9()],
+                            timeout: 2000,
+                            params: {
+                                adRefresh: '1'
+                            }
+                        }, function(bids) {
+                            AdMgr.push(function() {
+                                TADaps.b = [];
+                                TADaps.e = +new Date();
+                                apstag.setDisplayBids();
+                                AD.s.forEach(function(o) {
+                                    let c = 0
+                                      , z = o.getTargeting('amznbid');
+                                    if (z && z.length > 0) {
+                                        c = z[0]
+                                    }
+                                    TADaps.b.push(c)
+                                });
+                                AdMgr.bidsInR('aps')
+                            })
+                        })
+                    }
+                }
+                function slot(i) {
+                    return slots[i]
+                }
+                function a9slot(i) {
+                    return slot(i).a9()
+                }
+                function gptSlot(i) {
+                    let o = slot(i), j;
+                    if (o) {
+                        o.S = googletag.defineSlot(o.n, o.s, o.i);
+                        if (o.t) {
+                            for (j = 0; j < o.t.length; j++) {
+                                t = o.t[j];
+                                o.S.setTargeting(t[0], t[1])
+                            }
+                        }
+                        o.S.addService(googletag.pubads());
+                        AD.s.push(o.S);
+                        if (o.ro) {
+                            let e = document.getElementById(o.i);
+                            if (e) {
+                                addEventListener("impressionViewableRotate", function() {
+                                    refresh(o)
+                                }, true)
+                            }
+                        }
+                    }
+                }
+                function dispSlot(i) {
+                    let o = slot(i);
+                    push(function() {
+                        googletag.display(o.i)
+                    })
+                }
+                push(function() {
+                    googletag.pubads().disableInitialLoad();
+                    googletag.pubads().addEventListener('slotRenderEnded', rendered);
+                    googletag.pubads().setPublisherProvidedId('895214e70aa573549c5b02b26838a171')
+                });
+                return {
+                    addSlot: addSlot,
+                    slot: slot,
+                    a9slot: a9slot,
+                    gptSlot: gptSlot,
+                    dispSlot: dispSlot,
+                    bidsIn: bidsIn,
+                    bidsInR: bidsInR,
+                    push: push,
+                    setTargeting: setTargeting,
+                    send: send,
+                    set: set,
+                    get: get,
+                    rendered: rendered
+                }
+            }
+            )();
+            AdMgr.addSlot({
+                n: '/1004254/com_320x2',
+                s: [[320, 50], [320, 100]],
+                i: 'div-gpt-com-320x50-head',
+                t: [['pf', '003']]
+            });
+            AdMgr.addSlot({
+                n: '/1004254/tadcom-320x250mob',
+                s: [[300, 250], [336, 280]],
+                i: 'div-gpt-com-300x250-mob',
+                t: [['pf', '001']]
+            });
+            var pbjs = pbjs || {};
+            pbjs.que = pbjs.que || [];
+            pbjs.bidderSettings = {
+                standard: {
+                    storageAllowed: true
+                }
+            };
+            !function(a9, a, p) {
+                if (a[a9])
+                    return;
+                function q(c, r) {
+                    a[a9]._Q.push([c, r])
+                }
+                a[a9] = {
+                    init: function() {
+                        q("i", arguments)
+                    },
+                    fetchBids: function() {
+                        q("f", arguments)
+                    },
+                    setDisplayBids: function() {},
+                    targetingKeys: function() {
+                        return []
+                    },
+                    _Q: []
+                }
+            }("apstag", window, document);
+            function cmpEvent(t, s) {
+                if (s) {
+                    let e = t.eventStatus;
+                    if (e == 'useractioncomplete' || e == 'tcloaded') {
+                        if (!t.purpose.consents[1]) {
+                            AdMgr.set('p1', 1)
+                        }
+                        consentDataReady();
+                        /*
+if (t.purpose.consents[4]){consentDataReady()} else {sendAdserverRequest()}
+*/
+                    }
+                }
+            }
+            function consentDataReady() {
+                consentDataReady = function() {}
+                ;
+                pbjs.que.push(function() {
+                    if (AdMgr.get('p1')) {
+                        pbjs.setConfig({
+                            'deviceAccess': false
+                        })
+                    }
+                    pbjs.addAdUnits([{
+                        code: AdMgr.slot(0).n,
+                        mediaTypes: {
+                            banner: {
+                                sizes: AdMgr.slot(0).s
+                            }
+                        },
+                        ortb2Imp: {
+                            ext: {
+                                gpid: '/1004254/com_320x2#a6930'
+                            }
+                        },
+                        bids: [{
+                            bidder: 'adyoulike',
+                            params: {
+                                placement: '5d60c82bdc0234c2368dc1110cc3222d'
+                            }
+                        }, {
+                            bidder: 'amx',
+                            params: {
+                                tagId: 'dGltZWFuZGRhdGUuY29t'
+                            }
+                        }, {
+                            bidder: 'appnexus',
+                            params: {
+                                placementId: 11439176
+                            }
+                        }, {
+                            bidder: 'medianet',
+                            params: {
+                                cid: '8CU692DPW',
+                                crid: '954773934'
+                            }
+                        }, {
+                            bidder: 'openx',
+                            params: {
+                                delDomain: 'timeanddate-d.openx.net',
+                                unit: '544099937'
+                            }
+                        }, {
+                            bidder: 'pubmatic',
+                            params: {
+                                adSlot: 'com_320x2@320x50',
+                                publisherId: '157610'
+                            }
+                        }, {
+                            bidder: 'rubicon',
+                            params: {
+                                accountId: '16448',
+                                siteId: '127488',
+                                zoneId: '601644'
+                            }
+                        }, {
+                            bidder: 'sovrn',
+                            params: {
+                                tagid: '422105'
+                            }
+                        }, {
+                            bidder: 'triplelift',
+                            params: {
+                                inventoryCode: 'TimeAndDate_com_320x50mob'
+                            }
+                        }]
+                    }, {
+                        code: AdMgr.slot(1).n,
+                        mediaTypes: {
+                            banner: {
+                                sizes: AdMgr.slot(1).s
+                            }
+                        },
+                        ortb2Imp: {
+                            ext: {
+                                gpid: '/1004254/tadcom-320x250mob#a6930'
+                            }
+                        },
+                        bids: [{
+                            bidder: 'adyoulike',
+                            params: {
+                                placement: '6fb3c3012ca8a897f341013909707793'
+                            }
+                        }, {
+                            bidder: 'amx',
+                            params: {
+                                tagId: 'dGltZWFuZGRhdGUuY29t'
+                            }
+                        }, {
+                            bidder: 'appnexus',
+                            params: {
+                                placementId: 11439177
+                            }
+                        }, {
+                            bidder: 'medianet',
+                            params: {
+                                cid: '8CU692DPW',
+                                crid: '639158223'
+                            }
+                        }, {
+                            bidder: 'openx',
+                            params: {
+                                delDomain: 'timeanddate-d.openx.net',
+                                unit: '544099938'
+                            }
+                        }, {
+                            bidder: 'pubmatic',
+                            params: {
+                                adSlot: 'tadcom-320x250mob@300x250',
+                                publisherId: '157610'
+                            }
+                        }, {
+                            bidder: 'rubicon',
+                            params: {
+                                accountId: '16448',
+                                siteId: '127488',
+                                zoneId: '601646'
+                            }
+                        }, {
+                            bidder: 'sovrn',
+                            params: {
+                                tagid: '422100'
+                            }
+                        }, {
+                            bidder: 'triplelift',
+                            params: {
+                                inventoryCode: 'TimeAndDate_com_300x250mob'
+                            }
+                        }]
+                    }]);
+                    pbjs.requestBids({
+                        bidsBackHandler: function() {
+                            var c = 0, a, b, i, h = 0, r = pbjs.getBidResponses();
+                            AdMgr.push(function() {
+                                pbjs.setTargetingForGPTAsync()
+                            });
+                            for (a in r) {
+                                if (r.hasOwnProperty(a)) {
+                                    b = r[a].bids;
+                                    for (i = 0; i < b.length; i++) {
+                                        if (b[i].cpm) {
+                                            c++;
+                                            h = Math.max(h, b[i].cpm)
+                                        }
+                                    }
+                                }
+                            }
+                            AdMgr.setTargeting("tadbid", "" + c);
+                            AdMgr.highBid = h;
+                            AdMgr.bidsIn('pb')
+                        }
+                    })
+                });
+                TADaps.t = +new Date();
+                apstag.fetchBids({
+                    slots: [AdMgr.a9slot(0), AdMgr.a9slot(1)],
+                    timeout: 2470,
+                    params: {
+                        adRefresh: '0'
+                    }
+                }, function(bids) {
+                    AdMgr.push(function() {
+                        TADaps.e = +new Date();
+                        apstag.setDisplayBids();
+                        AD.s.forEach(function(o) {
+                            let c = 0
+                              , z = o.getTargeting('amznbid');
+                            if (z && z.length > 0) {
+                                c = z[0]
+                            }
+                            TADaps.b.push(c)
+                        });
+                        AdMgr.bidsIn('aps')
+                    })
+                })
+            }
+            pbjs.que.push(function() {
+                pbjs.setConfig({
+                    s2sConfig: {
+                        accountId: '1',
+                        bidders: ["adyoulike", "appnexus", "medianet", "openx", "sovrn"],
+                        adapter: 'prebidServer',
+                        enabled: true,
+                        endpoint: {
+                            p1Consent: 'https://www.timeanddate.com/.pbs/v1/openrtb2/auction',
+                            noP1Consent: 'https://www.timeanddate.com/.pbs/v1/openrtb2/auction'
+                        },
+                        syncEndpoint: {
+                            p1Consent: 'https://www.timeanddate.com/.pbs/v1/cookie_sync',
+                            noP1Consent: 'https://www.timeanddate.com/.pbs/v1/cookie_sync'
+                        },
+                        timeout: 1627
+                    },
+                    userSync: {
+                        userIds: [{
+                            name: "quantcastId"
+                        }, {
+                            name: "criteo"
+                        }, {
+                            name: "sharedId",
+                            params: {
+                                pixelUrl: "/scripts/sharedid.php"
+                            },
+                            storage: {
+                                name: "_sharedID",
+                                type: "cookie",
+                                expires: 30
+                            }
+                        }],
+                        filterSettings: {
+                            iframe: {
+                                bidders: "*",
+                                filter: "include"
+                            }
+                        }
+                    },
+                    floors: {
+                        enforcement: {
+                            enforceJS: false
+                        },
+                        data: {
+                            schema: {
+                                fields: ['size']
+                            },
+                            values: {
+                                '320x50': 0.03,
+                                '300x250': 0.01,
+                                '320x480': 0.17
+                            },
+                            default: 0.18
+                        }
+                    },
+                    priceGranularity: {
+                        buckets: [{
+                            min: 0,
+                            max: 4,
+                            increment: 0.01
+                        }, {
+                            min: 4,
+                            max: 8,
+                            increment: 0.02
+                        }, {
+                            min: 8,
+                            max: 20,
+                            increment: 0.05
+                        }, {
+                            min: 20,
+                            max: 30,
+                            increment: 0.10
+                        }, {
+                            min: 30,
+                            max: 50,
+                            increment: 0.25
+                        }, {
+                            min: 50,
+                            max: 100,
+                            increment: 1
+                        }]
+                    },
+                    enableSendAllBids: true,
+                    bidderTimeout: 2170,
+                    pageUrl: "https:\/\/www.timeanddate.com\/eclipse\/in\/nigeria\/kano-state"
+                });
+                pbjs.setBidderConfig({
+                    "bidders": ["rubicon"],
+                    "config": {
+                        "schain": {
+                            "validation": "strict",
+                            "config": {
+                                "ver": "1.0",
+                                "complete": 1,
+                                "nodes": [{
+                                    "asi": "netricsales.com",
+                                    "sid": "16448",
+                                    "hp": 1
+                                }]
+                            }
+                        }
+                    }
+                });
+                consentDataReady()
+            });
+            TADaps = {
+                b: []
+            };
+            apstag.init({
+                pubID: '12d5d789-63e3-47bc-ba31-070e97a96f2c',
+                adServer: 'googletag'
+            });
+            function sendAdserverRequest() {
+                AdMgr.send()
+            }
+            setTimeout(function() {
+                sendAdserverRequest()
+            }, 4340);
+            googletag.cmd.push(function() {
+                AdMgr.gptSlot(0);
+                AdMgr.gptSlot(1);
+                if ((document.referrer || '').indexOf('timeanddate') > 0) {
+                    if (AD.i = googletag.defineOutOfPageSlot('/1004254/com.interstitial', googletag.enums.OutOfPageFormat.INTERSTITIAL)) {
+                        AD.i.addService(googletag.pubads())
+                    }
+                }
+                googletag.pubads().setTargeting('ab', 'b').setTargeting('hr', '06').setTargeting('ut', 'd1').setTargeting('art', '6930').setTargeting('pf', '013').enableSingleRequest()
+            });
+            window._qevents = window._qevents || [];
+            window._qevents.push({
+                qacct: "p-8QLn8vj66GL9W",
+                uid: "__INSERT_EMAIL_HERE__"
+            });
+        </script>
+        <script src="/common/prebidtad.ios.mob_76.js.br" async></script>
+        <link rel=manifest href="/site.webmanifest">
+        <link rel=icon sizes=48x48 type="image/png" href="//c.tadst.com/favicon-48x48.png">
+        <link rel=icon type="image/png" sizes=16x16 href="//c.tadst.com/favicon-16x16.png">
+        <link rel=icon sizes=32x32 type="image/png" href="//c.tadst.com/favicon-32x32.png">
+        <link href="//c.tadst.com/com/common/global_25.css.br" type="text/css" rel=stylesheet>
+        <script type="application/ld+json">
+            
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Sun &amp; Moon","item":"https://www.timeanddate.com/astronomy/"},{"@type":"ListItem","position":2,"name":"Eclipses","item":"https://www.timeanddate.com/eclipse/"},{"@type":"ListItem","position":3,"name":"Nigeria","item":"https://www.timeanddate.com/eclipse/in/nigeria"},{"@type":"ListItem","position":4,"name":"Kano"}]}
+
+        </script>
+        <link rel=stylesheet href="//c.tadst.com/com/common/tpl_banner_18.css.br" type="text/css">
+        <link type="text/css" href="//c.tadst.com/com/common/citypages_53.css.br" rel=stylesheet>
+        <link rel=stylesheet type="text/css" href="//c.tadst.com/com/common/city_eclipse_6.css.br">
+        <link rel=stylesheet href="//c.tadst.com/com/common/city_eclipsestate_5.css.br" type="text/css">
+        <link rel=stylesheet href="//c.tadst.com/com/common/eclipseanimation_19.css.br" type="text/css">
+        <style>
+            .img_open-new {
+                display: block;
+                margin-bottom: 12px;
+                position: relative
+            }
+
+            .img_open-new:hover:after {
+                background: rgba(236,28,102,.9)
+            }
+
+            .img_open-new:hover img {
+                box-shadow: 0 10px 20px rgba(0,0,0,.19),0 6px 6px rgba(0,0,0,.23)
+            }
+
+            .img_open-new img {
+                box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)
+            }
+
+            .img_open-new:after {
+                background: rgba(236,28,102,.6);
+                border-radius: 50%;
+                color: #fff;
+                content: "\e2b2";
+                font-family: iconfont;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                height: 40px;
+                line-height: 40px;
+                position: absolute;
+                right: 12px;
+                text-align: center;
+                text-decoration: none;
+                top: 12px;
+                width: 40px
+            }
+
+            .wt-block__wrap:after {
+                clear: both;
+                content: "";
+                display: table
+            }
+
+            .wt-block__icon {
+                float: left;
+                margin-right: 12px
+            }
+
+            .wt-block__title {
+                margin: 0
+            }
+
+            .wt-block__temp {
+                color: #777;
+                display: block
+            }
+
+            @media only screen and (max-width: 735px) {
+                .content__body--has-sidebar {
+                    width: 100%;
+                    float: none;
+                    padding-right: 0;
+                }
+
+                .content__sidebar {
+                    width: 100%;
+                    float: none;
+                }
+
+                #ad300 {
+                    float: none;
+                }
+            }
+
+            .map_link {
+                display: block;
+                position: relative;
+                max-width: 760px;
+                margin-bottom: 6px;
+            }
+
+            .map_link::after {
+                content: '\e2b2';
+                font-family: iconfont;
+                font-style: normal;
+                font-weight: normal;
+                color: #fff;
+                background: rgba(236,28,102,0.6);
+                border-radius: 50%;
+                text-decoration: none;
+                font-size: 24px;
+                position: absolute;
+                top: 12px;
+                right: 12px;
+                line-height: 40px;
+                height: 40px;
+                width: 40px;
+                text-align: center;
+            }
+
+            .map_link img {
+                width: 100%;
+                max-width: 760px;
+            }
+
+            .map_link:hover::after {
+                background: rgba(236,28,102,0.9);
+            }
+
+            /*TEMP should be moved out */
+        </style>
+    </head>
+    <body class="tpl-banner  mob">
+        <script type="text/template" id=solarEclipseTemplate>
+            <svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" class="solarEclipse"><defs><radialGradient id="sunGrad"><stop offset="0%" stop-color="#fcb638"></stop><stop offset="90%" stop-color="#fcb638"></stop><stop offset="90%" stop-color="#f79e00"></stop><stop offset="100%" stop-color="#f79e00"></stop></radialGradient></defs><clipPath id="clip"><circle cx="0" cy="0" r="100" class="focusBody" transform="translate(200,200) scale(1)"></circle></clipPath><g class="bodies"><circle class="totality" cx="200" cy="200" r="100" fill="#FEB722" style="display:block"></circle><g class="focusBody" transform="translate(200,200) scale(1)"><circle class="sun" cx="0" cy="0" r="100" fill="url(#sunGrad)"></circle></g><circle class="moon" cx="0" cy="0" r="100" fill="#4A4A4A" clip-path="url(#clip)"></circle><g class="bailybead" transform="translate(0.000000, 0.000000)" style="display:none"><circle id="Oval" fill-opacity="0.4" fill="#FEB722" cx="0" cy="0" r="45"></circle><circle id="Oval" fill="#FEB722" cx="0" cy="0" r="21"></circle><circle id="Oval" fill-opacity="0.9" fill="#FFFFFF" cx="0" cy="0" r="8"></circle></g></g><g class="horizon" style="display:none"><rect x="0" y="390" width="400" height="10" fill="#000"></rect></g><g class="underHorizon" style="display:none"><path fill="#F2F1E5" d="M282.43 113.254c-5.729-1.792-11.811-3.577-17.892-5.368c-20.396-5.363-42.225-8.227-64.053-8.227 c-28.263 0-56.173 5.009-81.938 13.595c-45.082 15.387-83.73 42.225-109.488 74.425c26.118 32 64 59 109 74 l0 0c10.019 3 20 6 30 8.586c16.46 3 33 5 51 5.361c28.27 0 56.18-5.009 81.944-13.947 c44.723-15.388 83.371-42.225 109.489-74.431C366.513 155 327 128 282 113.254z"></path><path fill="#A2CBE4" d="M311.412 188.039c0 28.623-10.738 54.748-28.63 74.424c-25.758 8.947-53.667 13.956-81.938 13 c-28.27 0-56.173-5.009-81.938-13.956l0 0c-17.892-19.676-28.623-45.801-28.623-74.424c0-28.623 11.09-54.748 28.982-74.424 c25.758-8.587 53.308-13.596 81.938-13.596c28.623 0 56 5 81 13 C300.321 132 311 159 311 188.039z"></path><path fill="#333333" d="M200.485 232.048c-24.327 0-44.363-20.035-44.363-44.368c0-24.328 20.036-44.371 44.363-44.371 c24.333 0 44 20 44 44.371C244.854 212 225 232 200 232.048z"></path><path fill="#F2F1E5" d="M208.358 179.093c-8.586 0-15.74-7.154-15.74-15.741c0-8.592 7.154-15.746 15.74-15.746 s15.747 7 15 15.746C224.466 172 217 179 208 179.093z"></path><path fill="#010101" d="M387.27 191.975c-25.406-32.206-63.334-57.964-106.631-72.639c-6.082-2.145-11.811-3.576-17.173-5.009 c-47.594-12.522-96.253-10.378-142.415 5.009C77.754 134 39 159 14 191.975l-10.018-7.873 c26.837-33.991 66.911-61.181 112.353-76.569c48.306-16.459 99.836-18.611 149.568-5.369c5.729 1 11 3 18 5 c45.801 15 85 42 112 76.569L387.27 191.975z"></path><rect x="187" y="51" transform="matrix(-0.735 -0.6781 0.6781 -0.735 213.1981 481.084)" fill="#B92427" width="25" height="295"></rect></g></svg>
+        </script>
+        <script type="text/template" id=lunarEclipseTemplate>
+            <svg width="400" height="400" viewBox="0 0 400 400" preserveAspectRatio="xMinYMin meet" class="lunarEclipse"><clipPath id="clip"><circle cx="0" cy="0" r="100" class="focusBody"></circle></clipPath><g class="bodies"><g class="focusBody" transform="translate(200,200) scale(1)"><circle class="moon" cx="0" cy="0" r="100"></circle><circle class="moonCrater" cx="0" cy="0" r="20" transform=" translate(-60,-20) rotate(10) scale(1, 1.4) "></circle><circle class="moonCrater" cx="0" cy="0" r="20" transform=" translate(-28,-65) rotate(40) scale(0.55, 0.7) "></circle><circle class="moonCrater" cx="0" cy="0" r="20" transform=" translate(-58,50) rotate(-40) scale(0.2, 0.5) "></circle></g><circle class="penumbra " cx="200" cy="200" r="100" clip-path="url(#clip)"></circle><circle class="umbra" cx="100" cy="200" r="100" clip-path="url(#clip)"></circle></g><g class="horizon" style="display:none"><rect x="0" y="390" width="400" height="10" fill="#000"></rect></g><g class="underHorizon" style="display:none"><path fill="#F2F1E5" d="M282.43 113.254c-5.729-1.792-11.811-3.577-17.892-5.368c-20.396-5.363-42.225-8.227-64.053-8.227 c-28.263 0-56.173 5.009-81.938 13.595c-45.082 15.387-83.73 42.225-109.488 74.425c26.118 32 64 59 109 74 l0 0c10.019 3 20 6 30 8.586c16.46 3 33 5 51 5.361c28.27 0 56.18-5.009 81.944-13.947 c44.723-15.388 83.371-42.225 109.489-74.431C366.513 155 327 128 282 113.254z"></path><path fill="#A2CBE4" d="M311.412 188.039c0 28.623-10.738 54.748-28.63 74.424c-25.758 8.947-53.667 13.956-81.938 13 c-28.27 0-56.173-5.009-81.938-13.956l0 0c-17.892-19.676-28.623-45.801-28.623-74.424c0-28.623 11.09-54.748 28.982-74.424 c25.758-8.587 53.308-13.596 81.938-13.596c28.623 0 56 5 81 13 C300.321 132 311 159 311 188.039z"></path><path fill="#333333" d="M200.485 232.048c-24.327 0-44.363-20.035-44.363-44.368c0-24.328 20.036-44.371 44.363-44.371 c24.333 0 44 20 44 44.371C244.854 212 225 232 200 232.048z"></path><path fill="#F2F1E5" d="M208.358 179.093c-8.586 0-15.74-7.154-15.74-15.741c0-8.592 7.154-15.746 15.74-15.746 s15.747 7 15 15.746C224.466 172 217 179 208 179.093z"></path><path fill="#010101" d="M387.27 191.975c-25.406-32.206-63.334-57.964-106.631-72.639c-6.082-2.145-11.811-3.576-17.173-5.009 c-47.594-12.522-96.253-10.378-142.415 5.009C77.754 134 39 159 14 191.975l-10.018-7.873 c26.837-33.991 66.911-61.181 112.353-76.569c48.306-16.459 99.836-18.611 149.568-5.369c5.729 1 11 3 18 5 c45.801 15 85 42 112 76.569L387.27 191.975z"></path><rect x="187" y="51" transform="matrix(-0.735 -0.6781 0.6781 -0.735 213.1981 481.084)" fill="#B92427" width="25" height="295"></rect></g></svg>
+        </script>
+        <script type="text/template" id=solarEclipseTemplate></script>
+        <script type="text/template" id=lunarEclipseTemplate></script>
+        <script type=module>
+            
+const control = document.querySelector("[tad-control]")
+if (control) {
+control.setAttribute('data-tad-control', 'TadAnnotatedMap')
+}
+_T.control.applyBindingsOnLoad()
+
+        </script>
+        <div id=header__wrapper class=header__wrapper>
+            <div id=header__inner class=header__inner>
+                <div id="header" class="banner--dark banner--center" style="background: var(--header-banner-bg-color) var(--header-banner-bg-image) top center repeat-x; --header-banner-bg-color: #2A5C78; --header-banner-bg-image: url(//c.tadst.com/gfx/n/banners/banner-bg-solar-annular-newstyle.svg); --header-banner-offset: <!--HBS banner_offset;">
+                    <a class="banner__aside-1" href="/eclipse/solar/2023-october-14">
+                        <span class="date-stamp" title="Annular Solar Eclipse" style="background: rgba(0,0,0,.4); color: #fff; text-decoration: none; transform: translate(-100%) rotate(-90deg); transform-origin: top right; width: 110px;">Oct 14</span>
+                    </a>
+                    <div class="fixed">
+                        <div id=logo>
+                            <a href="/" rel=home title="Home page timeanddate.com">
+                                <div class="tad-logo" role="img" aria-label="timeanddate.com"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <a class="banner__aside-2" href="/eclipse/solar/2023-october-14"></a>
+                </div>
+                <div id=ad-wrap>
+                    <div id=ad-wrap2m>
+                        <div id=ad7>
+                            <div id='div-gpt-com-320x50-head'>
+                                <script>
+                                    AdMgr.dispSlot(0);
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav id=nav class=site-nav-bar>
+                    <div class="site-nav-bar__inner fixed">
+                        <button class="site-nav-bar__button site-nav-bar__button--menu" id=site-nav-menu title="Menu" aria-label="Menu">
+                            <i class="i-font i-menu"></i>
+                        </button>
+                        <div class=site-nav-bar__logo>
+                            <a href="/" rel=home title="Home page timeanddate.com">
+                                <img src="//c.tadst.com/gfx/n/logo/logo-2021--horizontal-inverted-darkbg.svg" loading=lazy alt="timeanddate.com" width=140 height=19>
+                            </a>
+                        </div>
+                        <form action="/search/results.html" class=site-nav-bar__search-form>
+                            <input class=site-nav-bar__search placeholder="Search..." id=site-nav-search name=query title="Search" aria-label="Search"/>
+                            <button class="site-nav-bar__button site-nav-bar__button--search" id=site-nav-search-btn aria-label="Search">
+                                <div class=site-nav-bar__search-inner>
+                                    <i class="i-font i-search"></i>
+                                </div>
+                            </button>
+                        </form>
+                        <div class=site-nav-bar__menu-wrap>
+                            <div class=site-nav__header>
+                                <button class=site-nav__login id=site-nav-login>Sign in</button>
+                                <button class=site-nav__close id=site-nav-close title="Close">
+                                    <i class="i-font i-close"></i>
+                                </button>
+                            </div>
+                            <ul id=site-nav class=site-nav>
+                                <li class="site-nav__menu ">
+                                    <a href="/news/" class=site-nav__title>News</a>
+                                    <ul class=site-nav__sub-menu>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/news/astronomy/">Astronomy News</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/news/time/">Time Zone News</a>
+                                        <li class="site-nav__item site-nav__item--divider">
+                                            <a class=site-nav__link href="/news/calendar/">Calendar &amp;Holiday News</a>
+                                        <li class="site-nav__item site-nav__item--divider">
+                                            <a class=site-nav__link href="/newsletter/">Newsletter</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/live/">Live events</a>
+                                    </ul>
+                                </li>
+                                <li class="site-nav__menu ">
+                                    <a href="/worldclock/" class=site-nav__title>World Clock</a>
+                                    <ul class=site-nav__sub-menu>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/worldclock/">Main World Clock</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/worldclock/full.html">Extended World Clock</a>
+                                        <li class="site-nav__item site-nav__item--divider">
+                                            <a class=site-nav__link href="/worldclock/personal.html">Personal World Clock</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/clocks/free.html">Clock for Your Site</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/worldclock/timezone/utc">UTC Time</a>
+                                    </ul>
+                                </li>
+                                <li class="site-nav__menu ">
+                                    <a href="/time/" class=site-nav__title>Time Zones</a>
+                                    <ul class=site-nav__sub-menu>
+                                        <li class="site-nav__item site-nav__item--divider site-nav__item--mob">
+                                            <a class=site-nav__link href="/time">Time Zones Home</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/worldclock/converter.html">Time Zone Converter</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/worldclock/meeting.html">Meeting Planner</a>
+                                        <li class="site-nav__item site-nav__item--divider">
+                                            <a class=site-nav__link href="/worldclock/fixedform.html">Event Time Announcer</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/time/map/">Time Zone Map</a>
+                                        <li class="site-nav__item site-nav__item--divider">
+                                            <a class=site-nav__link href="/time/zones/">Time Zone Abbreviations</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/time/dst/">Daylight Saving Time</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/time/change/">Time Changes Worldwide</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/time/difference/">Time Difference</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/news/time/">Time Zone News</a>
+                                    </ul>
+                                </li>
+                                <li class="site-nav__menu ">
+                                    <a href="/calendar/" class=site-nav__title>Calendar</a>
+                                    <ul class=site-nav__sub-menu>
+                                        <li class="site-nav__item site-nav__item--divider site-nav__item--mob">
+                                            <a class=site-nav__link href="/calendar/info.html">Calendars Home</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/calendar/">Calendar 2023</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/calendar/?year=2024">Calendar 2024</a>
+                                        <li class="site-nav__item site-nav__item--divider">
+                                            <a class=site-nav__link href="/calendar/monthly.html">Monthly Calendar</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/calendar/create.html">Printable Calendar (PDF)</a>
+                                        <li class="site-nav__item site-nav__item--divider">
+                                            <a class=site-nav__link href="/calendar/events/">Add Your Own Calendar Events</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/calendar/basic.html">Calendar Creator</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/holidays/">Holidays Worldwide</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/on-this-day/">On This Day in History</a>
+                                        <li class="site-nav__item site-nav__item--divider">
+                                            <a class=site-nav__link href="/holidays/fun/">Fun Holidays</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/calendar/months/">Months of the Year</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/calendar/days/">Days of the Week</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/date/leapyear.html">About Leap Years</a>
+                                    </ul>
+                                </li>
+                                <li class="site-nav__menu ">
+                                    <a href="/weather/" class=site-nav__title>Weather</a>
+                                    <ul class=site-nav__sub-menu>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/weather/">Worldwide</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/scripts/go.php">Local Weather</a>
+                                        <li class="site-nav__item site-nav__item--divider">
+                                            <a class=site-nav__link href="/scripts/go.php?type=hourly">Hour-by-Hour</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/scripts/go.php?type=ext">2-Week Forecast</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/scripts/go.php?type=historic">Past Week</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/scripts/go.php?type=climate">Climate</a>
+                                    </ul>
+                                </li>
+                                <li class="site-nav__menu   active">
+                                    <a href="/astronomy/" class=site-nav__title>Sun, Moon &amp;Space</a>
+                                    <ul class=site-nav__sub-menu>
+                                        <li class="site-nav__item site-nav__item--divider site-nav__item--mob">
+                                            <a class=site-nav__link href="/astronomy">Sun &amp;Moon Home</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/sun/">Sun Calculator</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/moon/">Moon Calculator</a>
+                                        <li class="site-nav__item site-nav__item--divider">
+                                            <a class=site-nav__link href="/moon/phases/">Moon Phases</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/astronomy/night/">Night Sky</a>
+                                        <li class="site-nav__item site-nav__item--divider">
+                                            <a class=site-nav__link href="/astronomy/meteor-shower/">Meteor Showers</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/worldclock/sunearth.html">Day and Night Map</a>
+                                        <li class="site-nav__item site-nav__item--divider">
+                                            <a class=site-nav__link href="/astronomy/moon/light.html">Moon Light World Map</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/eclipse/">Eclipses</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/eclipse/solar/2023-october-14">Oct 14 Annular Solar Eclipse</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/eclipse/solar/2024-april-8">April 2024 Total Solar Eclipse</a>
+                                        <li class="site-nav__item site-nav__item--divider">
+                                            <a class=site-nav__link href="/live/">Live Streams</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/calendar/seasons.html">Seasons</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/news/astronomy/">Astronomy News</a>
+                                    </ul>
+                                </li>
+                                <li class="site-nav__menu ">
+                                    <a href="/counters/" class=site-nav__title>Timers</a>
+                                    <ul class=site-nav__sub-menu>
+                                        <li class="site-nav__item site-nav__item--mob">
+                                            <a class=site-nav__link href="/counters">Timers Home</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/stopwatch/">Stopwatch</a>
+                                        <li class="site-nav__item site-nav__item--divider">
+                                            <a class=site-nav__link href="/timer/">Timer</a>
+                                        <li class="site-nav__item site-nav__item--divider">
+                                            <a class=site-nav__link href="/countdown/create">Countdown to Any Date</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/countdown/eclipse">Eclipse Countdown</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/countdown/halloween">Halloween Countdown</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/countdown/newyear">New Year Countdown</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/clocks/freecountdown.html">Countdown for Your Site</a>
+                                    </ul>
+                                </li>
+                                <li class="site-nav__menu ">
+                                    <a href="/date/" class=site-nav__title>Calculators</a>
+                                    <ul class=site-nav__sub-menu>
+                                        <li class="site-nav__item site-nav__item--divider site-nav__item--mob">
+                                            <a class=site-nav__link href="/date/">Calculators Home</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/date/duration.html">Date to Date Calculator (duration)</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/date/workdays.html">Business Date to Date (exclude holidays)</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/date/dateadd.html">Date Calculator (add / subtract)</a>
+                                        <li class="site-nav__item site-nav__item--divider">
+                                            <a class=site-nav__link href="/date/weekdayadd.html">Business Date (exclude holidays)</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/date/weekday.html">Weekday Calculator</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/date/weeknumber.html">Week Number Calculator</a>
+                                        <li class="site-nav__item site-nav__item--divider">
+                                            <a class=site-nav__link href="/date/roman-calculator.html">Roman Numeral Converter</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/date/birthday.html">Alternative Age Calculator</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/date/pattern.html">Date Pattern Calculator</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/worldclock/distance.html">Distance Calculator</a>
+                                    </ul>
+                                </li>
+                                <li class="site-nav__menu site-nav__menu--my-account">
+                                    <a href="/custom/" class=site-nav__title>
+                                        <i class='i-font i-account_circle site-nav__desktop-title'></i>
+                                        <span>My Account</span>
+                                    </a>
+                                    <ul class=site-nav__sub-menu>
+                                        <li class="site-nav__item site-nav__item--divider site-nav__item--mob">
+                                            <a class=site-nav__link href="/custom">My Account</a>
+                                        <li class=site-nav__item>
+                                            <a id=popchi class=site-nav__link href="/custom/location.html">My Location</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/custom/site.html">My Units</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/calendar/events/">My Events</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/worldclock/personal.html">My World Clock</a>
+                                        <li class="site-nav__item site-nav__item--divider">
+                                            <a class=site-nav__link href="/custom/privacy.html">My Privacy</a>
+                                        <li class=site-nav__item>
+                                            <a class=site-nav__link href="/services/">Paid Services</a>
+                                        <li class=site-nav__item>
+                                            <a id=poplogin class=site-nav__link href="/custom/login.html">Sign in</a>
+                                        <li class=site-nav__item>
+                                            <a id=popreg class=site-nav__link href="/custom/create.html">Register</a>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class=site-nav-bar__blur id=site-nav-blur></div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div id=po1 class=po></div>
+        <div id=mpo></div>
+        <div id=anw class=alert-notice__wrap></div>
+        <div class=main-content-div>
+            <script>
+                window.TAD = window.TAD || {};
+                TAD.abtest = 'b';
+            </script>
+            <header class="bn-header bn-header--eclipse">
+                <div class="bn-header__wrap fixed">
+                    <div class="headline-banner ">
+                        <section class=headline-banner__wrap>
+                            <img src="//c.tadst.com/gfx/n/fl/48/ng.png" class=headline-banner__flag alt="Flag for Kano" title="Flag for Kano" width=48 height=32>
+                            <div class=headline-banner__content>
+                                <h1 class=headline-banner__title>Eclipses in Kano, Nigeria</h1>
+                            </div>
+                        </section>
+                        <section class=headline-banner__extra>
+                            <form action="/eclipse/in/" class="bn-header__searchbox picker-city noprint">
+                                <input type=search autocomplete=off class=picker-city__input placeholder="Search for city or place…" onfocus="ifc(this,'ci',1,15,{&quot;pre&quot;:&quot;/eclipse/in/&quot;})" name=query/>
+                                <button type=submit class=picker-city__button title=Search>
+                                    <i class="i-font i-search"></i>
+                                </button>
+                            </form>
+                        </section>
+                    </div>
+                </div>
+                <section class=bn-header__extra>
+                    <nav id=bk-nav>
+                        <div class=fixed>
+                            <div class=bk-nav__inner>
+                                <div class=nav-2__wrap>
+                                    <ul class=nav-2>
+                                        <li class=nav-2__item>
+                                            <a href="/worldclock/nigeria/kano-state">Time/General </a>
+                                        </li>
+                                        <li class=nav-2__item>
+                                            <a href="/weather/nigeria/kano-state">Weather </a>
+                                        </li>
+                                        <li class=nav-2__item>
+                                            <a href="/time/zone/nigeria/kano-state">Time Zone </a>
+                                        </li>
+                                        <li class=nav-2__item>
+                                            <a href="/time/change/nigeria/kano-state">DST Changes </a>
+                                        </li>
+                                        <li class=nav-2__item>
+                                            <a href="/astronomy/nigeria/kano-state">Sun &amp;Moon</a>
+                                        </li>
+                                        <li class="active nav-2__item">
+                                            <a href="/eclipse/in/nigeria/kano-state">Eclipses</a>
+                                        </li>
+                                </div>
+                            </div>
+                        </div>
+        </div>
+</nav></section></header>
+<main class="tpl-banner__main layout-grid layout-grid--sky tpl-banner__main--eclipse">
+    <section class="layout-grid__hero tpl-banner__hero"></section>
+    <article class="layout-grid__main tpl-banner__content">
+        <section class=bk-focus>
+            <div id=qlook class=bk-focus__qlook>
+                <div class=h3>Partial Eclipse Visible</div>
+                <div data-tad-control='EclipseSVG' data-tad-options="{settings:{w:120,h:120,t:50,sr:0.268,mr:0.273,su:0.732,sp:1.269,mx:0.836,my:0.442,hz:47.484}, template:'lunarEclipseTemplate'}">
+                    <noscript>
+                        <img src="//c.tadst.com/scripts/eclipsegfx.php?v=2&amp;t=50&amp;w=120&amp;h=120&amp;sr=0.268&amp;mr=0.273&amp;su=0.732&amp;sp=1.269&amp;mx=0.836&amp;my=0.442&amp;hz=47.484" width=120 height=120 alt="Eclipse as seen from earth">
+                    </noscript>
+                </div>
+                28 Oct 2023
+                <div class=h4>
+                    Kano, <a href="/eclipse/in/nigeria?iso=20231028" title="28 Oct 2023 Eclipse in Nigeria">Nigeria</a>
+                </div>
+            </div>
+            <div class=bk-focus__info>
+                <table class="table table--left table--inner-borders-rows">
+                    <tbody>
+                        <tr>
+                            <th>Global Event: </th>
+                            <td>
+                                <a href="/eclipse/partial-lunar-eclipse.html">Partial Lunar Eclipse</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Local Type: </th>
+                            <td>
+                                <a href="/eclipse/partial-solar-eclipse.html">Partial Lunar Eclipse</a>
+                                , in Kano, <a href="/eclipse/in/nigeria?iso=20231028" title="28 Oct 2023 Eclipse in Nigeria">Nigeria</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Start of Partial: </th>
+                            <td>
+                                Sat, 28 Oct 2023, 19:03 <a href="/time/zones/wat" title="West Africa Time">WAT</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Start of Partial: </th>
+                            <td>
+                                Sat, 28 Oct 2023, 20:38 <a href="/time/zones/wat" title="West Africa Time">WAT</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>End of Partial: </th>
+                            <td>
+                                Sat, 28 Oct 2023, 21:48 <a href="/time/zones/wat" title="West Africa Time">WAT</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>End of Partial: </th>
+                            <td>
+                                Sat, 28 Oct 2023, 23:24 <a href="/time/zones/wat" title="West Africa Time">WAT</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <td colspan=2>
+                        <p class=ft-note>All times shown on this page are local time.</p>
+                    </td>
+</tfoot></table></div>
+<div id=bk-map class=bk-focus__map>
+    <a href="/eclipse/map/2023-october-28?n=116">
+        <img src="//c.tadst.com/gfx/eclipses2/20231028/path-320.png" width=320 height=160>
+        <img id=map-mrk src="//c.tadst.com/gfx/n/icon/icon-map-pin.png" class=fadeInDown style="left:112px;top:36px;position:absolute" alt=Location width=18 height=34>
+    </a>
+</div>
+</section>
+<section class=layout-eclipse>
+    <div class=layout-eclipse__main>
+        <p class=lk-block>
+            <a href="/eclipse/in/nigeria/kano-state?iso=20231028" class=read-more>When and where can I watch the next visible eclipse in Kano?</a>
+        <div id=ad300>
+            Advertising: List of upcoming eclipses continues below.<br>
+            <div id='div-gpt-com-300x250-mob'>
+                <script>
+                    AdMgr.dispSlot(1);
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class=layout-eclipse__side></div>
+    <section class=layout-eclipse__list>
+        <div class=fixed>
+            <h2>Eclipses Visible in Kano</h2>
+            <table id=tb_ec-city class=tb-plain>
+                <thead>
+                    <tr>
+                        <th colspan=2>Eclipse Visibility from Kano</th>
+                        <th colspan=2>Visibility Worldwide</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class=hl>
+                        <td>
+                            <div data-tad-control='EclipseSVG' data-tad-options="{settings:{w:50,h:50,t:50,sr:0.268,mr:0.273,su:0.732,sp:1.269,mx:0.836,my:0.442,hz:47.484}, template:'lunarEclipseTemplate'}">
+                                <noscript>
+                                    <img src="//c.tadst.com/scripts/eclipsegfx.php?v=2&amp;t=50&amp;w=50&amp;h=50&amp;sr=0.268&amp;mr=0.273&amp;su=0.732&amp;sp=1.269&amp;mx=0.836&amp;my=0.442&amp;hz=47.484" width=50 height=50 alt="Eclipse as seen from earth">
+                                </noscript>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="/eclipse/in/nigeria/kano-state?iso=20231028" title="28 Oct 2023 Partial Lunar Eclipse in Kano">
+                                <span class=ec-local-date>28 Oct 2023</span>
+                            </a>
+                            <span class=ec-local-type>Partial Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <span class=ec-globe-type>Partial Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <a href="/eclipse/lunar/2023-october-28">
+                                <img src="//c.tadst.com/gfx/eclipses2/20231028/path-160.png" title="Sat, 28 Oct Partial Lunar Eclipse event worldwide &ndash; who can see it?" class=ecl-pths height=80 width=160>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div data-tad-control='EclipseSVG' data-tad-options="{settings:{w:50,h:50,t:50,sr:0.267,mr:0.246,su:0.645,sp:1.180,mx:-1.228,my:0.036,hz:0.267}, template:'lunarEclipseTemplate'}">
+                                <noscript>
+                                    <img src="//c.tadst.com/scripts/eclipsegfx.php?v=2&amp;t=50&amp;w=50&amp;h=50&amp;sr=0.267&amp;mr=0.246&amp;su=0.645&amp;sp=1.180&amp;mx=-1.228&amp;my=0.036&amp;hz=0.267" width=50 height=50 alt="Eclipse as seen from earth">
+                                </noscript>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="/eclipse/in/nigeria/kano-state?iso=20240325" title="25 Mar 2024 Penumbral Lunar Eclipse in Kano">
+                                <span class=ec-local-date>25 Mar 2024</span>
+                            </a>
+                            <span class=ec-local-type>Penumbral Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <span class=ec-globe-type>Penumbral Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <a href="/eclipse/lunar/2024-march-25">
+                                <img src="//c.tadst.com/gfx/eclipses2/20240325/path-160.png" title="Mon, 25 Mar Penumbral Lunar Eclipse event worldwide &ndash; who can see it?" class=ecl-pths height=80 width=160>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div data-tad-control='EclipseSVG' data-tad-options="{settings:{w:50,h:50,t:50,sr:0.265,mr:0.282,su:0.770,sp:1.300,mx:0.987,my:0.216,hz:37.476}, template:'lunarEclipseTemplate'}">
+                                <noscript>
+                                    <img src="//c.tadst.com/scripts/eclipsegfx.php?v=2&amp;t=50&amp;w=50&amp;h=50&amp;sr=0.265&amp;mr=0.282&amp;su=0.770&amp;sp=1.300&amp;mx=0.987&amp;my=0.216&amp;hz=37.476" width=50 height=50 alt="Eclipse as seen from earth">
+                                </noscript>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="/eclipse/in/nigeria/kano-state?iso=20240918" title="18 Sep 2024 Partial Lunar Eclipse in Kano">
+                                <span class=ec-local-date>18 Sep 2024</span>
+                            </a>
+                            <span class=ec-local-type>Partial Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <span class=ec-globe-type>Partial Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <a href="/eclipse/lunar/2024-september-18">
+                                <img src="//c.tadst.com/gfx/eclipses2/20240918/path-160.png" title="Wed, 18 Sep Partial Lunar Eclipse event worldwide &ndash; who can see it?" class=ecl-pths height=80 width=160>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div data-tad-control='EclipseSVG' data-tad-options="{settings:{w:50,h:50,t:50,sr:0.268,mr:0.248,su:0.654,sp:1.190,mx:-0.695,my:-0.325,hz:2.154}, template:'lunarEclipseTemplate'}">
+                                <noscript>
+                                    <img src="//c.tadst.com/scripts/eclipsegfx.php?v=2&amp;t=50&amp;w=50&amp;h=50&amp;sr=0.268&amp;mr=0.248&amp;su=0.654&amp;sp=1.190&amp;mx=-0.695&amp;my=-0.325&amp;hz=2.154" width=50 height=50 alt="Eclipse as seen from earth">
+                                </noscript>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="/eclipse/in/nigeria/kano-state?iso=20250314" title="14 Mar 2025 Partial Lunar Eclipse in Kano">
+                                <span class=ec-local-date>14 Mar 2025</span>
+                            </a>
+                            <span class=ec-local-type>Partial Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <span class=ec-globe-type>Total Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <a href="/eclipse/lunar/2025-march-14">
+                                <img src="//c.tadst.com/gfx/eclipses2/20250314/path-160.png" title="Fri, 14 Mar Total Lunar Eclipse event worldwide &ndash; who can see it?" class=ecl-pths height=80 width=160>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div data-tad-control='EclipseSVG' data-tad-options="{settings:{w:50,h:50,t:50,sr:0.265,mr:0.270,su:0.736,sp:1.266,mx:-0.204,my:-0.181,hz:9.900}, template:'lunarEclipseTemplate'}">
+                                <noscript>
+                                    <img src="//c.tadst.com/scripts/eclipsegfx.php?v=2&amp;t=50&amp;w=50&amp;h=50&amp;sr=0.265&amp;mr=0.270&amp;su=0.736&amp;sp=1.266&amp;mx=-0.204&amp;my=-0.181&amp;hz=9.900" width=50 height=50 alt="Eclipse as seen from earth">
+                                </noscript>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="/eclipse/in/nigeria/kano-state?iso=20250907" title="7 Sep 2025 Total Lunar Eclipse in Kano">
+                                <span class=ec-local-date>7 Sep 2025</span>
+                            </a>
+                            <span class=ec-local-type>Total Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <span class=ec-globe-type>Total Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <a href="/eclipse/lunar/2025-september-7">
+                                <img src="//c.tadst.com/gfx/eclipses2/20250907/path-160.png" title="Sun, 7 Sep Total Lunar Eclipse event worldwide &ndash; who can see it?" class=ecl-pths height=80 width=160>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div data-tad-control='EclipseSVG' data-tad-options="{settings:{w:50,h:50,t:50,sr:0.264,mr:0.256,su:0.684,sp:1.212,mx:-0.457,my:-0.097,hz:16.157}, template:'lunarEclipseTemplate'}">
+                                <noscript>
+                                    <img src="//c.tadst.com/scripts/eclipsegfx.php?v=2&amp;t=50&amp;w=50&amp;h=50&amp;sr=0.264&amp;mr=0.256&amp;su=0.684&amp;sp=1.212&amp;mx=-0.457&amp;my=-0.097&amp;hz=16.157" width=50 height=50 alt="Eclipse as seen from earth">
+                                </noscript>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="/eclipse/in/nigeria/kano-state?iso=20260828" title="28 Aug 2026 Partial Lunar Eclipse in Kano">
+                                <span class=ec-local-date>28 Aug 2026</span>
+                            </a>
+                            <span class=ec-local-type>Partial Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <span class=ec-globe-type>Partial Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <a href="/eclipse/lunar/2026-august-28">
+                                <img src="//c.tadst.com/gfx/eclipses2/20260828/path-160.png" title="Fri, 28 Aug Partial Lunar Eclipse event worldwide &ndash; who can see it?" class=ecl-pths height=80 width=160>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div data-tad-control='EclipseSVG' data-tad-options="{settings:{w:50,h:50,t:50,sr:0.270,mr:0.247,mx:-0.118,my:0.162,hz:0.270442}, template:'solarEclipseTemplate'}">
+                                <noscript>
+                                    <img src="//c.tadst.com/scripts/eclipsegfx.php?v=2&amp;t=50&amp;w=50&amp;h=50&amp;sr=0.270442&amp;mr=0.247325&amp;mx=-0.117528&amp;my=0.161933&amp;hz=0.270442" width=50 height=50 alt="Eclipse as seen from earth">
+                                </noscript>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="/eclipse/in/nigeria/kano-state?iso=20270206" title="6 Feb 2027 Partial Solar Eclipse in Kano">
+                                <span class=ec-local-date>6 Feb 2027</span>
+                            </a>
+                            <span class=ec-local-type>Partial Solar Eclipse</span>
+                        </td>
+                        <td>
+                            <span class=ec-globe-type>Annular Solar Eclipse</span>
+                        </td>
+                        <td>
+                            <a href="/eclipse/solar/2027-february-6">
+                                <img src="//c.tadst.com/gfx/eclipses2/20270206/path-160.png" title="Sat, 6 Feb Annular Solar Eclipse event worldwide &ndash; who can see it?" class=ecl-pths height=80 width=160>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div data-tad-control='EclipseSVG' data-tad-options="{settings:{w:50,h:50,t:50,sr:0.270,mr:0.279,su:0.749,sp:1.288,mx:-1.029,my:0.237,hz:84.046}, template:'lunarEclipseTemplate'}">
+                                <noscript>
+                                    <img src="//c.tadst.com/scripts/eclipsegfx.php?v=2&amp;t=50&amp;w=50&amp;h=50&amp;sr=0.270&amp;mr=0.279&amp;su=0.749&amp;sp=1.288&amp;mx=-1.029&amp;my=0.237&amp;hz=84.046" width=50 height=50 alt="Eclipse as seen from earth">
+                                </noscript>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="/eclipse/in/nigeria/kano-state?iso=20270220" title="20–21 Feb 2027 Penumbral Lunar Eclipse in Kano">
+                                <span class=ec-local-date>20–21 Feb 2027</span>
+                            </a>
+                            <span class=ec-local-type>Penumbral Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <span class=ec-globe-type>Penumbral Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <a href="/eclipse/lunar/2027-february-20">
+                                <img src="//c.tadst.com/gfx/eclipses2/20270220/path-160.png" title="Sat, 20 Feb / Sun, 21 Feb Penumbral Lunar Eclipse event worldwide &ndash; who can see it?" class=ecl-pths height=80 width=160>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div data-tad-control='EclipseSVG' data-tad-options="{settings:{w:50,h:50,t:50,sr:0.263,mr:0.283,mx:-0.334,my:0.225,hz:58.775347}, template:'solarEclipseTemplate'}">
+                                <noscript>
+                                    <img src="//c.tadst.com/scripts/eclipsegfx.php?v=2&amp;t=50&amp;w=50&amp;h=50&amp;sr=0.262786&amp;mr=0.282921&amp;mx=-0.333834&amp;my=0.225307&amp;hz=58.775347" width=50 height=50 alt="Eclipse as seen from earth">
+                                </noscript>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="/eclipse/in/nigeria/kano-state?iso=20270802" title="2 Aug 2027 Partial Solar Eclipse in Kano">
+                                <span class=ec-local-date>2 Aug 2027</span>
+                            </a>
+                            <span class=ec-local-type>Partial Solar Eclipse</span>
+                        </td>
+                        <td>
+                            <span class=ec-globe-type>Total Solar Eclipse</span>
+                        </td>
+                        <td>
+                            <a href="/eclipse/solar/2027-august-2">
+                                <img src="//c.tadst.com/gfx/eclipses2/20270802/path-160.png" title="Mon, 2 Aug Total Solar Eclipse event worldwide &ndash; who can see it?" class=ecl-pths height=80 width=160>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div data-tad-control='EclipseSVG' data-tad-options="{settings:{w:50,h:50,t:50,sr:0.271,mr:0.278,su:0.756,sp:1.298,mx:-0.951,my:0.316,hz:22.867}, template:'lunarEclipseTemplate'}">
+                                <noscript>
+                                    <img src="//c.tadst.com/scripts/eclipsegfx.php?v=2&amp;t=50&amp;w=50&amp;h=50&amp;sr=0.271&amp;mr=0.278&amp;su=0.756&amp;sp=1.298&amp;mx=-0.951&amp;my=0.316&amp;hz=22.867" width=50 height=50 alt="Eclipse as seen from earth">
+                                </noscript>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="/eclipse/in/nigeria/kano-state?iso=20280112" title="12 Jan 2028 Partial Lunar Eclipse in Kano">
+                                <span class=ec-local-date>12 Jan 2028</span>
+                            </a>
+                            <span class=ec-local-type>Partial Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <span class=ec-globe-type>Partial Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <a href="/eclipse/lunar/2028-january-12">
+                                <img src="//c.tadst.com/gfx/eclipses2/20280112/path-160.png" title="Wed, 12 Jan Partial Lunar Eclipse event worldwide &ndash; who can see it?" class=ecl-pths height=80 width=160>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div data-tad-control='EclipseSVG' data-tad-options="{settings:{w:50,h:50,t:50,sr:0.271,mr:0.246,mx:0.418,my:0.115,hz:6.816323}, template:'solarEclipseTemplate'}">
+                                <noscript>
+                                    <img src="//c.tadst.com/scripts/eclipsegfx.php?v=2&amp;t=50&amp;w=50&amp;h=50&amp;sr=0.270867&amp;mr=0.246220&amp;mx=0.417597&amp;my=0.115015&amp;hz=6.816323" width=50 height=50 alt="Eclipse as seen from earth">
+                                </noscript>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="/eclipse/in/nigeria/kano-state?iso=20280126" title="26 Jan 2028 Partial Solar Eclipse in Kano">
+                                <span class=ec-local-date>26 Jan 2028</span>
+                            </a>
+                            <span class=ec-local-type>Partial Solar Eclipse</span>
+                        </td>
+                        <td>
+                            <span class=ec-globe-type>Annular Solar Eclipse</span>
+                        </td>
+                        <td>
+                            <a href="/eclipse/solar/2028-january-26">
+                                <img src="//c.tadst.com/gfx/eclipses2/20280126/path-160.png" title="Wed, 26 Jan Annular Solar Eclipse event worldwide &ndash; who can see it?" class=ecl-pths height=80 width=160>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div data-tad-control='EclipseSVG' data-tad-options="{settings:{w:50,h:50,t:50,sr:0.262,mr:0.253,su:0.677,sp:1.202,mx:-0.650,my:-0.342,hz:5.816}, template:'lunarEclipseTemplate'}">
+                                <noscript>
+                                    <img src="//c.tadst.com/scripts/eclipsegfx.php?v=2&amp;t=50&amp;w=50&amp;h=50&amp;sr=0.262&amp;mr=0.253&amp;su=0.677&amp;sp=1.202&amp;mx=-0.650&amp;my=-0.342&amp;hz=5.816" width=50 height=50 alt="Eclipse as seen from earth">
+                                </noscript>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="/eclipse/in/nigeria/kano-state?iso=20280706" title="6 Jul 2028 Partial Lunar Eclipse in Kano">
+                                <span class=ec-local-date>6 Jul 2028</span>
+                            </a>
+                            <span class=ec-local-type>Partial Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <span class=ec-globe-type>Partial Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <a href="/eclipse/lunar/2028-july-6">
+                                <img src="//c.tadst.com/gfx/eclipses2/20280706/path-160.png" title="Thu, 6 Jul Partial Lunar Eclipse event worldwide &ndash; who can see it?" class=ecl-pths height=80 width=160>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div data-tad-control='EclipseSVG' data-tad-options="{settings:{w:50,h:50,t:50,sr:0.271,mr:0.264,su:0.709,sp:1.251,mx:0.322,my:-0.181,hz:0.496}, template:'lunarEclipseTemplate'}">
+                                <noscript>
+                                    <img src="//c.tadst.com/scripts/eclipsegfx.php?v=2&amp;t=50&amp;w=50&amp;h=50&amp;sr=0.271&amp;mr=0.264&amp;su=0.709&amp;sp=1.251&amp;mx=0.322&amp;my=-0.181&amp;hz=0.496" width=50 height=50 alt="Eclipse as seen from earth">
+                                </noscript>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="/eclipse/in/nigeria/kano-state?iso=20281231" title="31 Dec 2028 Total Lunar Eclipse in Kano">
+                                <span class=ec-local-date>31 Dec 2028</span>
+                            </a>
+                            <span class=ec-local-type>Total Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <span class=ec-globe-type>Total Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <a href="/eclipse/lunar/2028-december-31">
+                                <img src="//c.tadst.com/gfx/eclipses2/20281231/path-160.png" title="Sun, 31 Dec Total Lunar Eclipse event worldwide &ndash; who can see it?" class=ecl-pths height=80 width=160>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div data-tad-control='EclipseSVG' data-tad-options="{settings:{w:50,h:50,t:50,sr:0.262,mr:0.269,su:0.729,sp:1.254,mx:-0.012,my:0.004,hz:22.689}, template:'lunarEclipseTemplate'}">
+                                <noscript>
+                                    <img src="//c.tadst.com/scripts/eclipsegfx.php?v=2&amp;t=50&amp;w=50&amp;h=50&amp;sr=0.262&amp;mr=0.269&amp;su=0.729&amp;sp=1.254&amp;mx=-0.012&amp;my=0.004&amp;hz=22.689" width=50 height=50 alt="Eclipse as seen from earth">
+                                </noscript>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="/eclipse/in/nigeria/kano-state?iso=20290626" title="26 Jun 2029 Total Lunar Eclipse in Kano">
+                                <span class=ec-local-date>26 Jun 2029</span>
+                            </a>
+                            <span class=ec-local-type>Total Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <span class=ec-globe-type>Total Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <a href="/eclipse/lunar/2029-june-26">
+                                <img src="//c.tadst.com/gfx/eclipses2/20290626/path-160.png" title="Tue, 26 Jun Total Lunar Eclipse event worldwide &ndash; who can see it?" class=ecl-pths height=80 width=160>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div data-tad-control='EclipseSVG' data-tad-options="{settings:{w:50,h:50,t:50,sr:0.271,mr:0.254,su:0.658,sp:1.201,mx:-0.212,my:0.283,hz:75.237}, template:'lunarEclipseTemplate'}">
+                                <noscript>
+                                    <img src="//c.tadst.com/scripts/eclipsegfx.php?v=2&amp;t=50&amp;w=50&amp;h=50&amp;sr=0.271&amp;mr=0.254&amp;su=0.658&amp;sp=1.201&amp;mx=-0.212&amp;my=0.283&amp;hz=75.237" width=50 height=50 alt="Eclipse as seen from earth">
+                                </noscript>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="/eclipse/in/nigeria/kano-state?iso=20291220" title="20–21 Dec 2029 Total Lunar Eclipse in Kano">
+                                <span class=ec-local-date>20–21 Dec 2029</span>
+                            </a>
+                            <span class=ec-local-type>Total Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <span class=ec-globe-type>Total Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <a href="/eclipse/lunar/2029-december-20">
+                                <img src="//c.tadst.com/gfx/eclipses2/20291220/path-160.png" title="Thu, 20 Dec / Fri, 21 Dec Total Lunar Eclipse event worldwide &ndash; who can see it?" class=ecl-pths height=80 width=160>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div data-tad-control='EclipseSVG' data-tad-options="{settings:{w:50,h:50,t:50,sr:0.263,mr:0.245,mx:-0.309,my:0.139,hz:0.266220}, template:'solarEclipseTemplate'}">
+                                <noscript>
+                                    <img src="//c.tadst.com/scripts/eclipsegfx.php?v=2&amp;t=50&amp;w=50&amp;h=50&amp;sr=0.263014&amp;mr=0.245145&amp;mx=-0.308780&amp;my=0.139232&amp;hz=0.266220" width=50 height=50 alt="Eclipse as seen from earth">
+                                </noscript>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="/eclipse/in/nigeria/kano-state?iso=20300601" title="1 Jun 2030 Partial Solar Eclipse in Kano">
+                                <span class=ec-local-date>1 Jun 2030</span>
+                            </a>
+                            <span class=ec-local-type>Partial Solar Eclipse</span>
+                        </td>
+                        <td>
+                            <span class=ec-globe-type>Annular Solar Eclipse</span>
+                        </td>
+                        <td>
+                            <a href="/eclipse/solar/2030-june-1">
+                                <img src="//c.tadst.com/gfx/eclipses2/20300601/path-160.png" title="Sat, 1 Jun Annular Solar Eclipse event worldwide &ndash; who can see it?" class=ecl-pths height=80 width=160>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div data-tad-control='EclipseSVG' data-tad-options="{settings:{w:50,h:50,t:50,sr:0.263,mr:0.278,su:0.769,sp:1.294,mx:0.719,my:0.274,hz:10.086}, template:'lunarEclipseTemplate'}">
+                                <noscript>
+                                    <img src="//c.tadst.com/scripts/eclipsegfx.php?v=2&amp;t=50&amp;w=50&amp;h=50&amp;sr=0.263&amp;mr=0.278&amp;su=0.769&amp;sp=1.294&amp;mx=0.719&amp;my=0.274&amp;hz=10.086" width=50 height=50 alt="Eclipse as seen from earth">
+                                </noscript>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="/eclipse/in/nigeria/kano-state?iso=20300615" title="15 Jun 2030 Partial Lunar Eclipse in Kano">
+                                <span class=ec-local-date>15 Jun 2030</span>
+                            </a>
+                            <span class=ec-local-type>Partial Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <span class=ec-globe-type>Partial Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <a href="/eclipse/lunar/2030-june-15">
+                                <img src="//c.tadst.com/gfx/eclipses2/20300615/path-160.png" title="Sat, 15 Jun Partial Lunar Eclipse event worldwide &ndash; who can see it?" class=ecl-pths height=80 width=160>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div data-tad-control='EclipseSVG' data-tad-options="{settings:{w:50,h:50,t:50,sr:0.270,mr:0.278,mx:0.475,my:0.244,hz:0.270154}, template:'solarEclipseTemplate'}">
+                                <noscript>
+                                    <img src="//c.tadst.com/scripts/eclipsegfx.php?v=2&amp;t=50&amp;w=50&amp;h=50&amp;sr=0.270154&amp;mr=0.278155&amp;mx=0.474751&amp;my=0.244036&amp;hz=0.270154" width=50 height=50 alt="Eclipse as seen from earth">
+                                </noscript>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="/eclipse/in/nigeria/kano-state?iso=20301125" title="25 Nov 2030 Partial Solar Eclipse in Kano">
+                                <span class=ec-local-date>25 Nov 2030</span>
+                            </a>
+                            <span class=ec-local-type>Partial Solar Eclipse</span>
+                        </td>
+                        <td>
+                            <span class=ec-globe-type>Total Solar Eclipse</span>
+                        </td>
+                        <td>
+                            <a href="/eclipse/solar/2030-november-25">
+                                <img src="//c.tadst.com/gfx/eclipses2/20301125/path-160.png" title="Mon, 25 Nov Total Solar Eclipse event worldwide &ndash; who can see it?" class=ecl-pths height=80 width=160>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div data-tad-control='EclipseSVG' data-tad-options="{settings:{w:50,h:50,t:50,sr:0.271,mr:0.249,su:0.640,sp:1.182,mx:-0.740,my:0.627,hz:74.480}, template:'lunarEclipseTemplate'}">
+                                <noscript>
+                                    <img src="//c.tadst.com/scripts/eclipsegfx.php?v=2&amp;t=50&amp;w=50&amp;h=50&amp;sr=0.271&amp;mr=0.249&amp;su=0.640&amp;sp=1.182&amp;mx=-0.740&amp;my=0.627&amp;hz=74.480" width=50 height=50 alt="Eclipse as seen from earth">
+                                </noscript>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="/eclipse/in/nigeria/kano-state?iso=20301209" title="9–10 Dec 2030 Penumbral Lunar Eclipse in Kano">
+                                <span class=ec-local-date>9–10 Dec 2030</span>
+                            </a>
+                            <span class=ec-local-type>Penumbral Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <span class=ec-globe-type>Penumbral Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <a href="/eclipse/lunar/2030-december-9">
+                                <img src="//c.tadst.com/gfx/eclipses2/20301209/path-160.png" title="Mon, 9 Dec / Tue, 10 Dec Penumbral Lunar Eclipse event worldwide &ndash; who can see it?" class=ecl-pths height=80 width=160>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div data-tad-control='EclipseSVG' data-tad-options="{settings:{w:50,h:50,t:50,sr:0.264,mr:0.273,su:0.746,sp:1.275,mx:0.931,my:-0.535,hz:17.756}, template:'lunarEclipseTemplate'}">
+                                <noscript>
+                                    <img src="//c.tadst.com/scripts/eclipsegfx.php?v=2&amp;t=50&amp;w=50&amp;h=50&amp;sr=0.264&amp;mr=0.273&amp;su=0.746&amp;sp=1.275&amp;mx=0.931&amp;my=-0.535&amp;hz=17.756" width=50 height=50 alt="Eclipse as seen from earth">
+                                </noscript>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="/eclipse/in/nigeria/kano-state?iso=20310507" title="7 May 2031 Penumbral Lunar Eclipse in Kano">
+                                <span class=ec-local-date>7 May 2031</span>
+                            </a>
+                            <span class=ec-local-type>Penumbral Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <span class=ec-globe-type>Penumbral Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <a href="/eclipse/lunar/2031-may-7">
+                                <img src="//c.tadst.com/gfx/eclipses2/20310507/path-160.png" title="Wed, 7 May Penumbral Lunar Eclipse event worldwide &ndash; who can see it?" class=ecl-pths height=80 width=160>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div data-tad-control='EclipseSVG' data-tad-options="{settings:{w:50,h:50,t:50,sr:0.264,mr:0.249,mx:0.387,my:0.184,hz:6.720163}, template:'solarEclipseTemplate'}">
+                                <noscript>
+                                    <img src="//c.tadst.com/scripts/eclipsegfx.php?v=2&amp;t=50&amp;w=50&amp;h=50&amp;sr=0.263530&amp;mr=0.249352&amp;mx=0.387152&amp;my=0.184097&amp;hz=6.720163" width=50 height=50 alt="Eclipse as seen from earth">
+                                </noscript>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="/eclipse/in/nigeria/kano-state?iso=20310521" title="21 May 2031 Partial Solar Eclipse in Kano">
+                                <span class=ec-local-date>21 May 2031</span>
+                            </a>
+                            <span class=ec-local-type>Partial Solar Eclipse</span>
+                        </td>
+                        <td>
+                            <span class=ec-globe-type>Annular Solar Eclipse</span>
+                        </td>
+                        <td>
+                            <a href="/eclipse/solar/2031-may-21">
+                                <img src="//c.tadst.com/gfx/eclipses2/20310521/path-160.png" title="Wed, 21 May Annular Solar Eclipse event worldwide &ndash; who can see it?" class=ecl-pths height=80 width=160>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div data-tad-control='EclipseSVG' data-tad-options="{settings:{w:50,h:50,t:50,sr:0.265,mr:0.258,su:0.694,sp:1.224,mx:-0.360,my:-1.254,hz:0.265}, template:'lunarEclipseTemplate'}">
+                                <noscript>
+                                    <img src="//c.tadst.com/scripts/eclipsegfx.php?v=2&amp;t=50&amp;w=50&amp;h=50&amp;sr=0.265&amp;mr=0.258&amp;su=0.694&amp;sp=1.224&amp;mx=-0.360&amp;my=-1.254&amp;hz=0.265" width=50 height=50 alt="Eclipse as seen from earth">
+                                </noscript>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="/eclipse/in/nigeria/kano-state?iso=20320425" title="25 Apr 2032 Penumbral Lunar Eclipse in Kano">
+                                <span class=ec-local-date>25 Apr 2032</span>
+                            </a>
+                            <span class=ec-local-type>Penumbral Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <span class=ec-globe-type>Total Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <a href="/eclipse/lunar/2032-april-25">
+                                <img src="//c.tadst.com/gfx/eclipses2/20320425/path-160.png" title="Sun, 25 Apr Total Lunar Eclipse event worldwide &ndash; who can see it?" class=ecl-pths height=80 width=160>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div data-tad-control='EclipseSVG' data-tad-options="{settings:{w:50,h:50,t:50,sr:0.268,mr:0.275,su:0.747,sp:1.282,mx:0.386,my:0.168,hz:28.959}, template:'lunarEclipseTemplate'}">
+                                <noscript>
+                                    <img src="//c.tadst.com/scripts/eclipsegfx.php?v=2&amp;t=50&amp;w=50&amp;h=50&amp;sr=0.268&amp;mr=0.275&amp;su=0.747&amp;sp=1.282&amp;mx=0.386&amp;my=0.168&amp;hz=28.959" width=50 height=50 alt="Eclipse as seen from earth">
+                                </noscript>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="/eclipse/in/nigeria/kano-state?iso=20321018" title="18 Oct 2032 Total Lunar Eclipse in Kano">
+                                <span class=ec-local-date>18 Oct 2032</span>
+                            </a>
+                            <span class=ec-local-type>Total Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <span class=ec-globe-type>Total Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <a href="/eclipse/lunar/2032-october-18">
+                                <img src="//c.tadst.com/gfx/eclipses2/20321018/path-160.png" title="Mon, 18 Oct Total Lunar Eclipse event worldwide &ndash; who can see it?" class=ecl-pths height=80 width=160>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div data-tad-control='EclipseSVG' data-tad-options="{settings:{w:50,h:50,t:50,sr:0.266,mr:0.248,su:0.651,sp:1.183,mx:0.360,my:0.011,hz:23.220}, template:'lunarEclipseTemplate'}">
+                                <noscript>
+                                    <img src="//c.tadst.com/scripts/eclipsegfx.php?v=2&amp;t=50&amp;w=50&amp;h=50&amp;sr=0.266&amp;mr=0.248&amp;su=0.651&amp;sp=1.183&amp;mx=0.360&amp;my=0.011&amp;hz=23.220" width=50 height=50 alt="Eclipse as seen from earth">
+                                </noscript>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="/eclipse/in/nigeria/kano-state?iso=20330414" title="14 Apr 2033 Total Lunar Eclipse in Kano">
+                                <span class=ec-local-date>14 Apr 2033</span>
+                            </a>
+                            <span class=ec-local-type>Total Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <span class=ec-globe-type>Total Lunar Eclipse</span>
+                        </td>
+                        <td>
+                            <a href="/eclipse/lunar/2033-april-14">
+                                <img src="//c.tadst.com/gfx/eclipses2/20330414/path-160.png" title="Thu, 14 Apr Total Lunar Eclipse event worldwide &ndash; who can see it?" class=ecl-pths height=80 width=160>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div data-tad-control='EclipseSVG' data-tad-options="{settings:{w:50,h:50,t:50,sr:0.268,mr:0.280,mx:0.031,my:0.039,hz:59.611558}, template:'solarEclipseTemplate'}">
+                                <noscript>
+                                    <img src="//c.tadst.com/scripts/eclipsegfx.php?v=2&amp;t=50&amp;w=50&amp;h=50&amp;sr=0.267833&amp;mr=0.279630&amp;mx=0.030731&amp;my=0.039284&amp;hz=59.611558" width=50 height=50 alt="Eclipse as seen from earth">
+                                </noscript>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="/eclipse/in/nigeria/kano-state?iso=20340320" title="20 Mar 2034 Partial Solar Eclipse in Kano">
+                                <span class=ec-local-date>20 Mar 2034</span>
+                            </a>
+                            <span class=ec-local-type>Partial Solar Eclipse</span>
+                        </td>
+                        <td>
+                            <span class=ec-globe-type>Total Solar Eclipse</span>
+                        </td>
+                        <td>
+                            <a href="/eclipse/solar/2034-march-20">
+                                <img src="//c.tadst.com/gfx/eclipses2/20340320/path-160.png" title="Mon, 20 Mar Total Solar Eclipse event worldwide &ndash; who can see it?" class=ecl-pths height=80 width=160>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <td colspan=4>
+                        <p class=ft-note>
+                            Note: Click on the date link for details in Kano, or the path map image for global details. Next visible eclipse is <span class=hl>highlighted</span>
+                            .
+                        </p>
+                    </td>
+                </tfoot>
+            </table>
+            <p class=lk-block>
+                <a href="/eclipse/list.html" class=read-more>All eclipses 1900 — 2199</a>
+    </section>
+</div></section></article><aside class="layout-grid__sky layout-grid__sky--sticky tpl-banner__sky"></aside>
+</main><script src="//c.tadst.com/com/common/wcommon_23.js.br"></script>
+<script src="//c.tadst.com/com/common/eclipsesvg_14.js.br"></script>
+<script src="/common/com_annotatedmap.js"></script>
+<script src="//c.tadst.com/com/common/astroseries_32.js.br"></script>
+<script src="//c.tadst.com/com/common/eclipseanimation_37.js.br"></script>
+<script type="text/javascript">
+    mtt = 1;
+    TO.pr = 1;
+    function eAnimGoto(a) {
+        gf("eclipseAnimation").tadControl.seekEvent(a)
+    }
+    ;</script>
+</div></div>
+<footer class="footer">
+    <section class="feedback-bar">
+        <div class="fixed feedback-bar__wrap">
+            <section id="instant-feedback" class="feedback-bar__instant-feedback">
+                <span class="feedback-bar__msg">How was your experience?</span>
+                <span class="feedback-bar__thankyou">Thank you for your feedback!</span>
+                <a href="#" onclick="return blif(1)" class="feedback-bar__thumb feedback-bar__thumb--up" title="Vote Good" aria-label="Vote for having a good experience">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0h24v24H0V0z"/>
+                        <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/>
+                    </svg>
+                </a>
+                <a href="#" onclick="return blif(0)" class="feedback-bar__thumb feedback-bar__thumb--down" title="Vote Bad" aria-label="Vote for having a bad experience">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0h24v24H0z"/>
+                        <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"/>
+                    </svg>
+                </a>
+            </section>
+            <section class="feedback-bar__contact">
+                <a id=bls1 href="/information/feedback.html" onclick="return bls(this)">
+                    Contact Us 
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                    </svg>
+                </a>
+            </section>
+        </div>
+    </section>
+    <section class="fixed footer__wrap">
+        <section class="footer__block footer__block--promo">
+            <article class="footer-card">
+                <a href="/services/supporter.html" class="footer-card__img-link">
+                    <img class="footer-card__img" width="100" height="100" src="//c.tadst.com/gfx/n/i/service__supporter.svg" loading="lazy" alt="Illustration of a pink shield with a white heart."/>
+                </a>
+                <section class="footer-card__content">
+                    <h4 class="footer-card__title">
+                        <a href="/services/supporter.html">Love Our Site? Become a Supporter
+  </a>
+                    </h4>
+                    <ul class="footer-card__text">
+                        <li>
+                            Browse our site <strong>advert free.</strong>
+                        </li>
+                        <li>
+                            Sun &amp;Moon times <strong>precise to the second.</strong>
+                        </li>
+                        <li>
+                            <strong>Exclusive calendar templates</strong>
+                            for PDF Calendar.
+                        </li>
+                    </ul>
+                </section>
+            </article>
+            <section class="footer__logo">
+                <a href="/" rel="home">
+                    <img src="//c.tadst.com/gfx/n/logo/logo-2021--horizontal-color-whitebg.svg" alt="The timeanddate logo" width="176" height="24">
+                </a>
+                <p>
+                    <a href="/information/copyright.html">© Time and Date AS 1995–2023</a>
+                </p>
+            </section>
+        </section>
+        <section class="footer__block footer__block--links-wrap">
+            <section class="footer__links">
+                <nav class="footer__links-block footer__links-block--company">
+                    <h4>Company</h4>
+                    <ul>
+                        <li>
+                            <a href="/company/">About us</a>
+                        </li>
+                        <li>
+                            <a href="/company/jobs">Careers/Jobs</a>
+                        </li>
+                        <li>
+                            <a href="/information/feedback.html" id=bls2 onclick="return bls(this)">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="/information/contact.html">Contact Details</a>
+                        </li>
+                        <li>
+                            <a href="/sitemap.html">Sitemap</a>
+                        </li>
+                        <li>
+                            <a href="/newsletter/">Newsletter</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="footer__links-block footer__links-block--legal">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li>
+                            <a href="/information/copyright.html">Link policy</a>
+                        </li>
+                        <li>
+                            <a href="/information/advertising.html">Advertising</a>
+                        </li>
+                        <li>
+                            <a href="/information/disclaimer.html">Disclaimer</a>
+                        </li>
+                        <li>
+                            <a href="/information/terms-conditions.html">Terms &amp;Conditions</a>
+                        </li>
+                        <li>
+                            <a href="/information/privacy.html">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="/custom/privacy.html">My Privacy</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="footer__links-block footer__links-block--services">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>
+                            <a href="/worldclock/">World Clock</a>
+                        </li>
+                        <li>
+                            <a href="/time/">Time Zones</a>
+                        </li>
+                        <li>
+                            <a href="/calendar/">Calendar</a>
+                        </li>
+                        <li>
+                            <a href="/weather/">Weather</a>
+                        </li>
+                        <li>
+                            <a href="/astronomy/">Sun &amp;Moon</a>
+                        </li>
+                        <li>
+                            <a href="/counters/">Timers</a>
+                        </li>
+                        <li>
+                            <a href="/date/">Calculators</a>
+                        </li>
+                        <li>
+                            <a href="/services/api/">API</a>
+                        </li>
+                        <li>
+                            <a href="/extra/">Apps</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="footer__links-block footer__links-block--sites">
+                    <h4>Sites</h4>
+                    <ul>
+                        <li>
+                            <a href="https://www.timeanddate.no">timeanddate.no</a>
+                        </li>
+                        <li>
+                            <a href="https://www.timeanddate.de">timeanddate.de</a>
+                        </li>
+                    </ul>
+                </nav>
+                <section class="footer__social">
+                    <h4>Follow Us</h4>
+                    <div class="footer__social-icons">
+                        <a href="https://www.facebook.com/timeanddate/">
+                            <i class="footer__social-icon footer__social-icon--facebook" title="timeanddate.com on Facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/timeanddate">
+                            <i class="footer__social-icon footer__social-icon--twitter" title="timeanddate.com on Twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/time-and-date-as/about/">
+                            <i class="footer__social-icon footer__social-icon--linkedin" title="timeanddate.com on Linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/timeanddatecom/">
+                            <i class="footer__social-icon footer__social-icon--instagram" title="timeanddate.com on Instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/c/timeanddate">
+                            <i class="footer__social-icon footer__social-icon--youtube" title="timeanddate.com on YouTube"></i>
+                        </a>
+                    </div>
+                </section>
+            </section>
+            <p class="footer__copyright">
+                © Time and Date AS 1995–2023. 
+ <a href="/information/copyright.html">Privacy &amp;Terms</a>
+            </p>
+        </section>
+    </section>
+</footer>
+<!-- FOOTER END -->
+<script>
+
+    bli();
+    main();
+</script>
+<div id=FBD style="display:none" class=wfc></div>
+</body></html>

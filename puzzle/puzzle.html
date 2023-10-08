@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind&family=Montserrat:wght@400;700&family=Poppins:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <style>
+        
+body{
+    background-image: url('background_img.png');
+    background-repeat: no repeat;
+
+}
+
+.container{
+    width: 500px;
+    border-radius: 7px;
+    background: #ffff;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container h2{
+    color: rgb(126, 214, 126);
+    font-size: 40px;
+    font-family: cursive;
+    padding: 18px 25px;
+    border-bottom: 2px solid ;
+}
+
+.container .content{
+    margin: 25px 20px 35px;
+}
+.content .word{
+  font-family: cursive;
+  width: auto;
+  font-size: 33px;
+  text-align: center;
+  text-transform: uppercase;
+   letter-spacing: 24px;
+   color: greenyellow;
+   margin-right: -24px;
+   background-color: black;
+   justify-content: center;
+
+} 
+.content .details{
+    margin: 25px 0 20px;
+}
+.details p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.details p b{
+    font-weight: 500;
+}
+.content input{
+    width: 90%;
+    height: 60px;
+    outline: none;
+    padding: 0 16px;
+    border-radius: 5px;
+    border: 1px solid ;
+    font-size: 18px;
+
+}
+
+.content .buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.buttons .button{
+    outline: none;
+    
+    padding: 15px 0;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons .refresh-word{
+    background: yellowgreen;
+    color: rgb(40, 54, 17);
+    width: 150px;
+    height:50px ;
+    border: none;
+    border-radius: 15px;
+}
+
+.buttons .check-word{
+    background: rgb(24, 247, 135);
+    border: none;
+    color: rgb(105, 116, 88);
+    width: 150px;
+    border-radius: 15px;
+}
+
+
+    </style>
+    <div class="container">
+    <h2>ECLIPSE WORD SCRAMBLE</h2>
+    <div class="content">
+        <p class="word"></p>
+        <div class="details">
+            <p class="hint">Hint: <span></span></p>
+            <p class="time">Time Left: <span><b>30</b>s</span></p>
+        </div>
+        <input type="text" placeholder="Guess the correct word">
+        <div class="result-container">
+            <p class="result" id="result"></p>
+        </div>
+        
+        <div class="buttons">
+            <button class="refresh-word">Refresh Word</button>
+            <button class="check-word">Check Word</button>
+        </div>
+        
+        
+    </div>
+
+         <!-- <div class="word">
+            <span>E</span>
+            <span><input class="question-mark" type="text" placeholder="_"></span>
+            <span>L</span>
+            <span>I</span>
+            <span>P</span>
+            <span>?</span>
+            <span>E</span>
+        </div> 
+    </div>
+    <div class="controls-container">
+        <p id="result"></p>
+        <button id="start-btn">Start game</button>
+    </div> -->
+
+    <script>
+        
+
+const words = [
+     {
+        word: "eclipse",
+        hint: "a celestial bodys moves into a shadow of another"
+    },
+    {
+        word: "shadow",
+        hint: "it happens when the sun reflects on a body"
+    },
+    {
+        word: "solar",
+        hint: "another name for the sun"
+    },
+    {
+        word: "moon",
+        hint: "a heavenly body that is seen at night"
+    },
+    {
+        word: "lunar",
+        hint: "another name for the moon"
+    },
+    {
+        word: "alignment",
+        hint: "straight-line arrangement"
+    },
+    {
+        word: "totality",
+        hint: "complete darkness phase"
+    },
+    {
+        word: "celestial",
+        hint: "pertaining to the sky such as stars"
+    },
+    {
+        word: "visibility",
+        hint: "clear view or sight"
+    },
+    {
+        word: "partial",
+        hint: "only a portion of the celestial body is obscured"
+    },
+    {
+        word: "magnitude",
+        hint: "apparent size of something"
+    },
+    {
+        word: "umber",
+        hint: "complete shadow blockage"
+    },
+    {
+        word: "totality",
+        hint: "complete darkness phase"
+    },
+
+    
+]
+
+const wordText = document.querySelector(".word");
+const hintText = document.querySelector(".hint span");
+const timeText = document.querySelector(".time b");
+const inputField = document.querySelector("input");
+const refreshBtn = document.querySelector(".refresh-word");
+const checkBtn = document.querySelector(".check-word");
+const resultText = document.querySelector(".result");
+
+let correctWord, timer;
+
+const initTimer = (maxTime) => {
+    clearInterval(timer);
+    timer = setInterval(() => {
+        if (maxTime > 0) {
+            maxTime--;
+            timeText.innerText = maxTime;
+        } else {
+            clearInterval(timer);
+            alert(`Time is up!! ${correctWord.toUpperCase()} is the correct word`);
+            initGame();
+        }
+    }, 1000);
+};
+
+const initGame = () => {
+    initTimer(30);
+    let randomObj = words[Math.floor(Math.random() * words.length)];
+    let wordArray = randomObj.word.split("");
+    for (let i = wordArray.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [wordArray[i], wordArray[j]] = [wordArray[j], wordArray[i]];
+    }
+    wordText.innerText = wordArray.join("");
+    hintText.innerText = randomObj.hint;
+    correctWord = randomObj.word.toLowerCase();
+    inputField.value = "";
+    inputField.setAttribute("maxlength", correctWord.length);
+    resultText.innerText = ""; // Clear the result text
+};
+
+const complimentUser = (userWord) => {
+    let compliments = [
+        `Great job, ${userWord.toUpperCase()} is correct!`,
+        `You nailed it with ${userWord.toUpperCase()}!`,
+        `Impressive, ${userWord.toUpperCase()} is right!`,
+    ];
+
+    let randomCompliment = compliments[Math.floor(Math.random() * compliments.length)];
+    resultText.innerText = randomCompliment;
+};
+
+const checkWord = () => {
+    let userWord = inputField.value.toLowerCase();
+    if (!userWord) return alert("Please enter a word.");
+    if (userWord !== correctWord) {
+        resultText.innerText = `Oops! ${userWord} is not the correct word.`;
+    } else {
+        complimentUser(userWord);
+    }
+};
+
+refreshBtn.addEventListener("click", initGame);
+checkBtn.addEventListener("click", checkWord);
+
+// Initialize the game
+initGame();
+
+        </script>
+</body>
+</html>
