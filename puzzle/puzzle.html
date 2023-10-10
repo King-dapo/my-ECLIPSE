@@ -89,16 +89,12 @@
         .buttons .refresh-word {
             background: yellowgreen;
             color: rgb(40, 54, 17);
-            background-radius: 8px;
-            background-width: none;
             width: 150px;
             height: 50px;
         }
 
         .buttons .check-word {
             background: rgb(24, 247, 135);
-             background-radius: 8px;
-            background-width: none;
             color: rgb(105, 116, 88);
             width: 150px;
         }
@@ -167,15 +163,20 @@
             }, 1000);
         };
 
-        const initGame = () => {
-            initTimer(30);
-            let randomObj = words[Math.floor(Math.random() * words.length)];
-            let wordArray = randomObj.word.split("");
+        const shuffleWord = (word) => {
+            let wordArray = word.split("");
             for (let i = wordArray.length - 1; i > 0; i--) {
                 let j = Math.floor(Math.random() * (i + 1));
                 [wordArray[i], wordArray[j]] = [wordArray[j], wordArray[i]];
             }
-            wordText.innerText = wordArray.join("");
+            return wordArray.join("");
+        };
+
+        const initGame = () => {
+            initTimer(30);
+            let randomObj = words[Math.floor(Math.random() * words.length)];
+            let shuffledWord = shuffleWord(randomObj.word);
+            wordText.innerText = shuffledWord;
             hintText.innerText = randomObj.hint;
             correctWord = randomObj.word.toLowerCase();
             inputField.value = "";
