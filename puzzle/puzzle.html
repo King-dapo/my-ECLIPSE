@@ -125,54 +125,7 @@
                 word: "eclipse",
                 hint: "a celestial body moves into the shadow of another"
             },
-            {
-                word: "shadow",
-                hint: "it happens when the sun reflects on a body"
-            },
-            {
-                word: "solar",
-                hint: "another name for the sun"
-            },
-            {
-                word: "moon",
-                hint: "a heavenly body that is seen at night"
-            },
-            {
-                word: "lunar",
-                hint: "another name for the moon"
-            },
-            {
-                word: "alignment",
-                hint: "straight-line arrangement"
-            },
-            {
-                word: "totality",
-                hint: "complete darkness phase"
-            },
-            {
-                word: "celestial",
-                hint: "pertaining to the sky such as stars"
-            },
-            {
-                word: "visibility",
-                hint: "clear view or sight"
-            },
-            {
-                word: "partial",
-                hint: "only a portion of the celestial body is obscured"
-            },
-            {
-                word: "magnitude",
-                hint: "apparent size of something"
-            },
-            {
-                word: "umber",
-                hint: "complete shadow blockage"
-            },
-            {
-                word: "totality",
-                hint: "complete darkness phase"
-            },
+            // Add more words and hints here
         ];
 
         const wordText = document.querySelector(".word");
@@ -233,8 +186,11 @@
         const checkWord = () => {
             let userWord = inputField.value.toLowerCase();
             if (!userWord) return alert("Please enter a word.");
+            
             if (userWord === correctWord) {
                 complimentUser(userWord);
+            } else {
+                resultText.innerText = `Wrong guess! Try again.`;
             }
         };
 
