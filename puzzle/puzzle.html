@@ -89,14 +89,24 @@
         .buttons .refresh-word {
             background: yellowgreen;
             color: rgb(40, 54, 17);
+            background-radius: 8px;
+            background-width: none;
             width: 150px;
             height: 50px;
         }
 
         .buttons .check-word {
             background: rgb(24, 247, 135);
+             background-radius: 8px;
+            background-width: none;
             color: rgb(105, 116, 88);
             width: 150px;
+        }
+
+        .score {
+            text-align: center;
+            font-size: 20px;
+            margin-top: 20px;
         }
     </style>
     <div class="container">
@@ -117,6 +127,7 @@
                 <button class="check-word">Check Word</button>
             </div>
         </div>
+        <div class="score">Score: <span id="score">0</span> / <span id="total">0</span></div>
     </div>
 
     <script>
@@ -135,8 +146,12 @@
         const refreshBtn = document.querySelector(".refresh-word");
         const checkBtn = document.querySelector(".check-word");
         const resultText = document.querySelector(".result");
+        const scoreElement = document.getElementById("score");
+        const totalElement = document.getElementById("total");
 
         let correctWord, timer;
+        let score = 0;
+        let totalQuestions = 0;
 
         const initTimer = (maxTime) => {
             clearInterval(timer);
@@ -166,6 +181,8 @@
             inputField.value = "";
             inputField.setAttribute("maxlength", correctWord.length);
             resultText.innerText = "";
+            totalQuestions++;
+            totalElement.innerText = totalQuestions;
         };
 
         const complimentUser = (userWord) => {
@@ -179,6 +196,8 @@
             resultText.innerText = randomCompliment;
 
             setTimeout(() => {
+                score++;
+                scoreElement.innerText = score;
                 initGame();
             }, 2000); // Wait for 2 seconds before moving to the next word
         };
