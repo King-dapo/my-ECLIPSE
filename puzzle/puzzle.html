@@ -227,4 +227,22 @@
 
             setTimeout(() => {
                 initGame();
-            }, 2000); // Wait for 2 seconds before moving to
+            }, 2000); // Wait for 2 seconds before moving to the next word
+        };
+
+        const checkWord = () => {
+            let userWord = inputField.value.toLowerCase();
+            if (!userWord) return alert("Please enter a word.");
+            if (userWord === correctWord) {
+                complimentUser(userWord);
+            }
+        };
+
+        refreshBtn.addEventListener("click", initGame);
+        checkBtn.addEventListener("click", checkWord);
+
+        // Initialize the game
+        initGame();
+    </script>
+</body>
+</html>
